@@ -15,6 +15,20 @@ module.exports = {
       '6xl': '4rem',
     },
     extend: {
+      transitionProperty: {
+        'max-height': 'max-height',
+      },
+      screens: {
+        xs: '400px',
+        '3xl': '1680px',
+        '4xl': '2200px',
+      },
+      maxWidth: {
+        '10xl': '1512px',
+      },
+      borderRadius: {
+        '5xl': '40px',
+      },
       colors: {
         gray: {
           100: '#f7fafc',
