@@ -695,8 +695,8 @@ export const FOOTER_CONTACT_INFO = {
 export const SOCIALS = {
   title: 'Social',
   links: [
-    { icon: '/svgs/facebook.svg', href: '/' },
-    { icon: '/svgs/instagram.svg', href: '/' },
-    { icon: '/svgs/twitter.svg', href: '/' },
+    { icon: '/assets/svgs/facebook.svg', href: '/' },
+    { icon: '/assets/svgs/instagram.svg', href: '/' },
+    { icon: '/assets/svgs/twitter.svg', href: '/' },
   ],
 };

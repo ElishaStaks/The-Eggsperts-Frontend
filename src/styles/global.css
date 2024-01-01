@@ -20,27 +20,27 @@ body {
 
 @layer utilities {
   .btn_white {
-    @apply border-white bg-white px-8 py-3 text-green-50
+    @apply border-white bg-white px-8 py-3 text-green-500
   }
 
   .btn_white_text {
-    @apply border-white bg-white px-8 py-3 text-gray-90
+    @apply border-white bg-white px-8 py-3 text-gray-900
   }
 
   .btn_yellow {
-    @apply bg-yellow-50 px-8 py-5 text-white
+    @apply bg-yellow-500 px-8 py-5 text-white
   }
 
   .btn_green {
-    @apply border-green-50 bg-green-50 px-8 py-5 text-white
+    @apply border-green-500 bg-green-500 px-8 py-5 text-white
   }
 
   .btn_dark_green {
-    @apply bg-green-90 px-8 py-4 text-white transition-all
+    @apply bg-green-900 px-8 py-4 text-white transition-all
   }
 
   .btn_dark_green_outline {
-    @apply border-gray-20 bg-green-90 px-8 py-5 text-white
+    @apply border-gray-200 bg-green-900 px-8 py-5 text-white
   }
 
   .max-container {
