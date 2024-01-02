@@ -11,21 +11,21 @@ export const NAV_LINKS = [
 export const FEATURES = [
   {
     title: 'Locally sourced ingredients',
-    icon: '/svgs/farm.svg',
+    icon: '/assets/svgs/farm.svg',
     variant: 'green',
     description:
       'From the farm to your table, enjoy the goodness of locally procured, premium-quality ingredients.',
   },
   {
     title: 'Farm fresh eggs',
-    icon: '/svgs/eggs.svg',
+    icon: '/assets/svgs/eggs.svg',
     variant: 'green',
     description:
       'Indulge in the richness of eggs laid with care, ensuring each bite is a wholesome delight.',
   },
   {
     title: 'Delicious and nutrious',
-    icon: '/svgs/honey_jar.svg',
+    icon: '/assets/svgs/honey_jar.svg',
     variant: 'green',
     description:
       'Explore our range of delicious honey, packed with natural sweetness and nutritional benefits.',
@@ -36,12 +36,12 @@ export const FEATURES = [
 export const PRODUCT_RANGE = [
   {
     title: 'Eggs',
-    image: '/stall_3.jpeg',
+    image: '/assets/shop/stall_3.jpeg',
     selectFilter: 'Eggs',
   },
   {
     title: 'Honey',
-    image: '/stall_2.jpeg',
+    image: '/assets/shop/stall_2.jpeg',
     selectFilter: 'Honey',
   },
 ];

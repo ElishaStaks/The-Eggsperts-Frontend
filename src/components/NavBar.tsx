@@ -20,13 +20,13 @@ const Navbar = () => {
   return (
     <nav className="relative z-30 py-8">
       <div className="max-container flexBetween padding-container">
-        <Link href="/" className="text-2xl font-semibold text-yellow-500">
+        <Link href="/" className="logo-link">
           The Eggsperts
         </Link>
 
         {/* Display the menu icon on screens smaller than lg */}
         <Image
-          className="inline-block cursor-pointer lg:hidden"
+          className="nav-menu-icon"
           src="/assets/svgs/menu.svg"
           alt="menu"
           width={32}
@@ -37,18 +37,14 @@ const Navbar = () => {
         {/* On larger screens (lg and xl), display the regular navigation links and shop now button */}
         <ul className="hidden h-full gap-12 lg:flex">
           {NAV_LINKS.map((link) => (
-            <Link
-              href={link.href}
-              key={link.key}
-              className="regular-16 flexCenter cursor-pointer pb-1.5 text-gray-500 transition-all hover:font-bold"
-            >
+            <Link href={link.href} key={link.key} className="nav-link">
               {link.label}
             </Link>
           ))}
         </ul>
-        <div className="lg:flexCenter hidden">
+        <div className="nav-button-wrapper">
           <Button
-            className="transition-transform hover:scale-105"
+            className="w-button"
             href="/products"
             type="button"
             title="Shop Now"
@@ -59,30 +55,22 @@ const Navbar = () => {
 
       {/* Responsive navigation menu */}
       {isMenuOpen && (
-        <div
-          className="max-container padding-container fixed inset-x-0 bottom-0 top-12 z-50 mt-10 
-                bg-white lg:hidden"
-        >
-          <ul className="flex flex-col items-center gap-4">
+        <div className="max-container padding-container nav-menu-mobile">
+          <ul className="nav-link-mobile-wrapper">
             {NAV_LINKS.map((link) => (
-              <li
-                className="w-full border-b border-solid border-gray-300 
-                            pb-1.5 text-lg text-gray-500 hover:font-bold"
+              <Link
                 key={link.key}
+                onClick={handleMenuClick}
+                href={link.href}
+                className="nav-link-mobile"
               >
-                <Link
-                  onClick={handleMenuClick}
-                  href={link.href}
-                  className="cursor-pointer"
-                >
-                  {link.label}
-                </Link>
-              </li>
+                {link.label}
+              </Link>
             ))}
           </ul>
-          <div className="mt-4 flex flex-1 justify-center gap-3">
+          <div className="nav-menu-mobile-buttons-wrapper">
             <Button
-              className="mt-4 transition-transform hover:scale-105"
+              className="w-button mt-4"
               href="/products"
               type="button"
               title="Shop Now"
@@ -90,7 +78,7 @@ const Navbar = () => {
               onClick={handleMenuClick}
             />
             <Button
-              className="mt-4 transition-transform hover:scale-105"
+              className="w-button mt-4"
               type="button"
               title="Cancel"
               variant="btn_dark_green"

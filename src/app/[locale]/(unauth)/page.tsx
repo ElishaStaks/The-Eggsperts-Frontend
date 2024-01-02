@@ -1,5 +1,9 @@
 import { getTranslations } from 'next-intl/server';
 
+import Features from '@/components/Features';
+import Hero from '@/components/Hero';
+import ProductRange from '@/components/ProductRange';
+
 export async function generateMetadata({
   params: { locale },
 }: {
@@ -15,5 +19,11 @@ export async function generateMetadata({
 
 export default function Index() {
   // eslint-disable-next-line react/jsx-no-useless-fragment
-  return <></>;
+  return (
+    <>
+      <Hero />
+      <ProductRange />
+      <Features />
+    </>
+  );
 }
