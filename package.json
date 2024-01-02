@@ -26,6 +26,7 @@
   "dependencies": {
     "@clerk/localizations": "^1.26.13",
     "@clerk/nextjs": "^4.29.1",
+    "@googlemaps/js-api-loader": "^1.16.2",
     "@hookform/resolvers": "^3.3.2",
     "@libsql/client": "^0.3.6",
     "@sentry/nextjs": "^7.91.0",
@@ -62,6 +63,7 @@
     "@storybook/testing-library": "^0.2.2",
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
+    "@types/google.maps": "^3.54.10",
     "@types/jest": "^29.5.11",
     "@types/node": "^20.10.5",
     "@types/react": "^18.2.45",

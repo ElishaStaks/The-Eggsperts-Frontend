@@ -3,7 +3,7 @@ import type { FilterType, ProductCardProps } from '../types';
 // NAVIGATION
 export const NAV_LINKS = [
   { href: '/', key: 'home', label: 'Home' },
-  { href: '/#about', key: 'about', label: 'About' },
+  { href: '/about', key: 'about', label: 'About Us' },
   { href: '/#contact', key: 'contact', label: 'Contact' },
 ];
 
@@ -678,7 +678,7 @@ export const FOOTER_LINKS = [
   {
     title: 'Help',
     links: [
-      { label: 'About The Eggsperts', href: '/#about' },
+      { label: 'About The Eggsperts', href: '/about' },
       { label: 'Contact Us', href: '/#contact' },
     ],
   },

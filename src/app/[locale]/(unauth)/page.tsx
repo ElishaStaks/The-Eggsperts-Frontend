@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 
+import Contact from '@/components/Contact';
 import Features from '@/components/Features';
 import Hero from '@/components/Hero';
 import ProductRange from '@/components/ProductRange';
@@ -24,6 +25,7 @@ export default function Index() {
       <Hero />
       <ProductRange />
       <Features />
+      <Contact />
     </>
   );
 }

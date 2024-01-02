@@ -47,7 +47,7 @@ const Navbar = () => {
             className="w-button"
             href="/products"
             type="button"
-            title="Shop Now"
+            title="SHOP NOW"
             variant="btn_dark_green"
           />
         </div>

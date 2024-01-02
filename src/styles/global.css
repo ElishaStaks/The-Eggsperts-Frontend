@@ -137,7 +137,7 @@ body {
   }
 
   .title-icon {
-    @apply absolute top-[-30px] w-10 lg:w-[50px]
+    @apply absolute left-[-5px] top-[-40px] w-10 lg:w-[50px]
   }
 
   .w-button {
@@ -185,7 +185,7 @@ body {
   }
   
   .nav-link {
-    @apply regular-18 flexCenter cursor-pointer pb-1.5 text-gray-500 transition-all hover:text-gray-900
+    @apply regular-18 bold-16 flexCenter cursor-pointer pb-1.5 text-gray-500 transition-all hover:text-gray-900
   }
 
   .nav-button-wrapper {
@@ -265,6 +265,65 @@ body {
 
   .feature-item-description {
     @apply regular-16 mt-5 bg-white/80 text-gray-500 lg:mt-[30] lg:bg-none
+  }
+
+  /* CONTACT STYLES */
+  .contact-section-wrapper {
+    @apply flexCenter flex-col overflow-hidden bg-center bg-no-repeat pb-24 pt-12
+  }
+
+  .contact-title {
+    @apply bold-40 lg:bold-64
+  }
+
+  .contact-main-wrapper {
+    @apply max-container padding-container relative flex w-full justify-center lg:justify-between
+  }
+
+  .contact-form-title {
+    @apply mb-2 flex items-center text-2xl font-bold
+  }
+
+  .contact-form-description {
+    @apply regular-16 bg-white/80 text-gray-500 lg:bg-none
+  }
+
+  .contact-form-input {
+    @apply w-full appearance-none rounded border px-3 py-2 leading-tight
+  }
+
+  /* CALL TO ACTION STYLES */
+  .cta-link-wrapper {
+    @apply relative inset-0 flex w-full flex-col justify-center px-[20%] md:px-[15%]
+  }
+
+  .cta-wrapper {
+    @apply relative grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8
+  }
+
+  .cta-content-wrapper {
+    @apply flex flex-col items-center md:max-w-[31rem] md:items-start md:justify-center
+  }
+
+  .cta-title {
+    @apply bold-40 lg:bold-64 text-center text-3xl font-medium leading-tight md:text-left md:text-4xl lg:text-5xl xl:text-5xl
+  }
+
+  .cta-description {
+    @apply text-center text-gray-500 md:text-left
+  }
+
+  /* ABOUT PAGE STYLES */
+  .about-title {
+    @apply bold-40 lg:bold-64 text-4xl font-medium sm:text-5xl md:text-5xl lg:text-6xl
+  }
+
+  .about-content-wrapper {
+    @apply relative mt-[2.25rem] grid grid-cols-1 gap-16 md:mt-[3.5rem] md:grid-cols-2 md:gap-8
+  }
+
+  .about-image-wrapper {
+    @apply relative inset-0 flex w-full justify-center
   }
 }
 

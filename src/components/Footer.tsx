@@ -48,7 +48,7 @@ const Footer = () => {
                 {FOOTER_CONTACT_INFO.links.map((link) => (
                   <div className="footer-column-two-wrapper" key={link.label}>
                     <p className="whitespace-nowrap">{link.label}:</p>
-                    <p className="medium-14 whitespace-nowrap text-blue-700">
+                    <p className="medium-14 whitespace-nowrap text-yellow-500">
                       {link.value}
                     </p>
                   </div>
