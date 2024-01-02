@@ -32,6 +32,25 @@ export const FEATURES = [
   },
 ];
 
+export const IMAGES_GALLERY = [
+  {
+    image: '/egg_in_bowl.png',
+    key: 'image-1',
+  },
+  {
+    image: '/egg_in_bowl_2.png',
+    key: 'image-2',
+  },
+  {
+    image: '/eggs_in_bowl_4.png',
+    key: 'image-2',
+  },
+  {
+    image: '/egg_bowl_3.jpg',
+    key: 'image-2',
+  },
+];
+
 // PRODUCT RANGE SECTION
 export const PRODUCT_RANGE = [
   {

@@ -18,10 +18,16 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="relative z-30 py-8">
+    <nav className="relative z-30">
       <div className="max-container flexBetween padding-container">
         <Link href="/" className="logo-link">
-          The Eggsperts
+          <Image
+            src="/test.jpg"
+            alt="Responsive no image"
+            className="rounded-full"
+            width={200}
+            height={200}
+          />
         </Link>
 
         {/* Display the menu icon on screens smaller than lg */}

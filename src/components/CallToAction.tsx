@@ -11,13 +11,13 @@ const CallToAction = () => {
         <div className="w-full max-w-[81.25rem]">
           <div className="flex flex-col items-center justify-center md:flex-row">
             <div className="cta-wrapper">
-              <Link href="/contact" className="cta-link-wrapper">
+              <Link href="/#contact" className="cta-link-wrapper">
                 <Image
-                  src="/eggs_title_icon.png"
+                  src="/chicken_cta.png"
                   alt="Responsive no image"
                   className="rounded-full"
-                  width={4000}
-                  height={4000}
+                  width={1000}
+                  height={1000}
                 />
               </Link>
               <div className="cta-content-wrapper">

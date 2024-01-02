@@ -9,8 +9,8 @@ const Hero = () => {
         <Image
           src="/hero_cooked_eggs.jpg"
           alt="Background"
-          fill
           className="object-cover"
+          fill
         />
         <div className="absolute inset-0 bg-black opacity-50" />
       </div>
@@ -20,7 +20,7 @@ const Hero = () => {
           alt="eggs"
           width={50}
           height={50}
-          className="title-icon"
+          className="absolute top-[-30px] w-10 lg:w-[50px]"
         />
         <h1 className="hero-title">Taste Farm Fresh</h1>
         <h1 className="hero-title">Goodness</h1>

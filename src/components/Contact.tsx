@@ -5,13 +5,13 @@
 'use client';
 
 import Image from 'next/image';
-// import Map from '../components/Map';
 import type { ChangeEvent, FormEvent } from 'react';
 import { useState } from 'react';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { toast } from 'sonner';
 
 import Button from './Button';
 import GoogleMaps from './Map';
-// import { toast } from 'sonner';
 
 const Contact = () => {
   const initialFormData = {
@@ -67,7 +67,7 @@ const Contact = () => {
       ) {
         // Email without @ found
         emailFormatValid = false;
-        // toast.error('Please include an @ in the email address');
+        toast.error('Please include an @ in the email address');
         element.classList.add('border-red-500');
       }
 
@@ -77,7 +77,7 @@ const Contact = () => {
     }
 
     if (hasEmptyFields) {
-      // toast.error('Please fill out all fields');
+      toast.error('Please fill out all fields');
       return;
     }
 
@@ -101,12 +101,12 @@ const Contact = () => {
 
     if (response.ok) {
       setLoading(false);
-      // toast.success('Message has been sent');
+      toast.success('Message has been sent');
       // Clear the form data
       setFormData(initialFormData);
     } else {
       setLoading(false);
-      // toast.success('Message failed to send');
+      toast.success('Message failed to send');
     }
   };
 
@@ -122,22 +122,23 @@ const Contact = () => {
             className="title-icon left-[5px]"
           />
           <h2 className="contact-title">Contact Us</h2>
+          <p className="contact-form-description">
+            Have any general inquires? Start by filling out our form below, and
+            someone from our team will reach back to you.
+          </p>
         </div>
       </div>
       <div className="contact-main-wrapper">
         {/* Use lg:justify-between to separate the contact form and map on large screens */}
         <div className="z-20 flex w-full flex-col lg:mr-10 lg:w-full">
           {/* Specify width for the contact form on large screens */}
-          <div className="rounded-md border p-6 shadow-lg">
+          <div className="border-1 rounded-md bg-[#e3deca] p-6 shadow-lg">
             <div className="mb-6">
-              <h2 className="contact-form-title">
+              {/* <h2 className="contact-form-title">
                 <span className="mr-2">✉️</span> Write to us
-              </h2>
-              <p className="contact-form-description">
-                If you have a general enquiry, you can submit it to us online.
-              </p>
+              </h2> */}
             </div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="bg-[#e3deca]">
               <div className="mb-4">
                 <label
                   htmlFor="name"

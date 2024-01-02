@@ -34,7 +34,7 @@ const ProductList: React.FC<ProductListProps> = ({
       <div className="product-list-available-text-wrapper">
         <div className="lg:hidden">
           <Image
-            src="/svgs/filter.svg"
+            src="/assets/svgs/filter.svg"
             alt="filter"
             width={50}
             height={50}

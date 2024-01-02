@@ -3,6 +3,7 @@ import { getTranslations } from 'next-intl/server';
 import Contact from '@/components/Contact';
 import Features from '@/components/Features';
 import Hero from '@/components/Hero';
+import ImageGallery from '@/components/ImageGallery';
 import ProductRange from '@/components/ProductRange';
 
 export async function generateMetadata({
@@ -24,6 +25,7 @@ export default function Index() {
     <>
       <Hero />
       <ProductRange />
+      <ImageGallery />
       <Features />
       <Contact />
     </>

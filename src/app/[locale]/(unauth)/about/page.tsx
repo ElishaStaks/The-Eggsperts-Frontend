@@ -7,8 +7,8 @@ import CallToAction from '@/components/CallToAction';
 const page = () => {
   return (
     <>
-      <section className="relative mx-auto">
-        <div className="max-container padding-container pt-[3rem] lg:pt-[5.5rem]">
+      <section className="relative mx-auto bg-[#e3deca]">
+        <div className="max-container padding-container py-[6rem] lg:pt-[5.5rem]">
           <div className="w-full">
             <div className="relative z-10">
               <div className="max-w-[55rem]">
@@ -20,7 +20,7 @@ const page = () => {
                   className="title-icon left-[5px]"
                 />
                 <h1 className="about-title">
-                  A team dedicated to offerinng the best farm fresh products
+                  A team dedicated to offering the best farm fresh products
                 </h1>
               </div>
 
@@ -34,7 +34,7 @@ const page = () => {
                   />
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <div className="max-w-none md:max-w-[26.25rem]">
+                  <div className="max-w-none">
                     <div className="pb-2">
                       <div className="relative">
                         <Image
@@ -45,11 +45,11 @@ const page = () => {
                           className="title-icon"
                         />
                       </div>
-                      <h3 className="bold-40 text-2xl font-medium leading-tight md:text-5xl">
-                        The Eggsperts
+                      <h3 className="bold-40 mb-[1rem] text-2xl font-medium leading-tight md:text-5xl">
+                        About Us
                       </h3>
                     </div>
-                    <p className="mb-[2.25rem] text-gray-500">
+                    <p className="mb-[2.25rem] text-[#878069]">
                       Your go-to destination for high-quality eggs and honey in
                       Melbourne. Located at Victoria Market on Elizabeth Street,
                       we are proud to offer a wide range of fresh and delicious

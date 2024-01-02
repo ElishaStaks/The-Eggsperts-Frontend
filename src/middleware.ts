@@ -1,4 +1,4 @@
-import { authMiddleware, redirectToSignIn } from '@clerk/nextjs';
+import { authMiddleware } from '@clerk/nextjs';
 import type { NextRequest } from 'next/server';
 import createMiddleware from 'next-intl/middleware';
 
@@ -20,12 +20,12 @@ export default authMiddleware({
   },
 
   // eslint-disable-next-line consistent-return
-  afterAuth(auth, req) {
-    // Handle users who aren't authenticated
-    if (!auth.userId && !auth.isPublicRoute) {
-      return redirectToSignIn({ returnBackUrl: req.url });
-    }
-  },
+  // afterAuth(auth, req) {
+  //   // Handle users who aren't authenticated
+  //   if (!auth.userId && !auth.isPublicRoute) {
+  //     return redirectToSignIn({ returnBackUrl: req.url });
+  //   }
+  // },
 });
 
 export const config = {
