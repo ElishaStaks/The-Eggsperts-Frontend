@@ -49,7 +49,7 @@ export const PRODUCT_RANGE = [
 export const PRODUCTS: ProductCardProps[] = [
   {
     name: '600 Caged Trays',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description: '180 large fresh caged eggs in filler trays.',
     type: 'Eggs',
     variants: [
@@ -61,7 +61,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: '700 Caged Trays',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description: '180 extra large fresh caged eggs in filler trays.',
     type: 'Eggs',
     variants: [
@@ -73,7 +73,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: '70+ Caged Trays',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description:
       '120 king size fresh caged eggs in filler trays. Stocking density for these eggs is 1500 hens per hectare.',
     type: 'Eggs',
@@ -86,7 +86,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: '800 Caged Trays',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description: '180 jumbo fresh caged eggs in filler trays.',
     type: 'Eggs',
     variants: [
@@ -98,7 +98,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: '700 Free Range Trays',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description:
       '180 extra large fresh free range eggs in filler trays. Stocking density for these eggs is 1500 hens per hectare.',
     type: 'Eggs',
@@ -111,7 +111,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: '75+ Free Range Trays',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description:
       '120 king size fresh free range eggs in filler trays. Stocking density for these eggs is 1500 hens per hectare.',
     type: 'Eggs',
@@ -124,7 +124,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: '700 Caged Dozens',
-    image: '/products/700_caged_doz.jpg',
+    image: '/assets/products/700_caged_doz.jpg',
     description: '180 extra large fresh caged eggs. 15 dozens per box.',
     type: 'Eggs',
     variants: [
@@ -136,7 +136,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: '800 Caged Dozens',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description: '180 jumbo fresh caged eggs. 15 dozens per box.',
     type: 'Eggs',
     variants: [
@@ -148,7 +148,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: '600 Golden Yolk',
-    image: '/products/700_golden_yolk.jpg',
+    image: '/assets/products/700_golden_yolk.jpg',
     description:
       '180 large fresh free range organic eggs. 15 dozens per box. Stocking density for these eggs is 1000 hens per hectare.',
     type: 'Eggs',
@@ -161,7 +161,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: '700 Golden Yolk',
-    image: '/products/700_golden_yolk.jpg',
+    image: '/assets/products/700_golden_yolk.jpg',
     description:
       '180 extra large fresh free range eggs. 15 dozens per box. Stocking density for these eggs is 1000 hens per hectare.',
     type: 'Eggs',
@@ -174,7 +174,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: '850 Free Range',
-    image: '/products/850_sunrise.jpg',
+    image: '/assets/products/850_sunrise.jpg',
     description:
       '144 king size fresh free range eggs. 12 dozens per box. Stocking density for these eggs is 1500 hens per hectare.',
     type: 'Eggs',
@@ -187,7 +187,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'Henzen',
-    image: '/products/henzen.jpg',
+    image: '/assets/products/henzen.jpg',
     description:
       '180 jumbo fresh free range organic eggs. 15 dozens per box. Stocking density for these eggs is 50 hens per hectare.',
     type: 'Eggs',
@@ -200,7 +200,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: "Joanne's",
-    image: '/products/joannes.jpg',
+    image: '/assets/products/joannes.jpg',
     description:
       '180 jumbo fresh grain fed, barn laid organic eggs. 15 dozens per box.',
     type: 'Eggs',
@@ -213,7 +213,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'Cracking Eggs',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description:
       '180 jumbo fresh free range eggs. 15 dozens per box. Stocking density for these eggs is 25 hens per hectare and are pastured raised.',
     type: 'Eggs',
@@ -226,7 +226,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'Earth Eggs',
-    image: '/products/earth_eggs.jpg',
+    image: '/assets/products/earth_eggs.jpg',
     description:
       '180 extra large fresh free range eggs. 15 dozens per box. Stocking density for these eggs is 145 hens per hectare. These eggs are pastured raised, soy free and hormone free eggs.',
     type: 'Eggs',
@@ -239,7 +239,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'Honest Eggs',
-    image: '/products/honest_eggs.jpeg',
+    image: '/assets/products/honest_eggs.jpeg',
     description:
       '180 jumbo fresh free range eggs. 15 dozens per box. Stocking density for these eggs is less than 30 hens per hectare and are pastured raised.',
     type: 'Eggs',
@@ -252,7 +252,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'Kiss n Run',
-    image: '/products/kiss_n_run.jpg',
+    image: '/assets/products/kiss_n_run.jpg',
     description:
       '180 jumbo fresh free range eggs. 15 dozens per box. Stocking density for these eggs is 30 hens per hectare and are pastured raised.',
     type: 'Eggs',
@@ -265,7 +265,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'Chook At The Rooke',
-    image: '/products/chooks_at_the_rooks.jpg',
+    image: '/assets/products/chooks_at_the_rooks.jpg',
     description:
       '180 jumbo fresh free range eggs. 15 dozens per box. Stocking density for these eggs is 94 hens per hectare and are pastured raised.',
     type: 'Eggs',
@@ -278,7 +278,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'Smoked Eggs',
-    image: '/products/smoked_eggs.jpg',
+    image: '/assets/products/smoked_eggs.jpg',
     description:
       '6 fresh free range smoked eggs. Half dozen pack. Stocking density for these eggs is 10,000 hens per hectare. Eggs have been smoked in a smoker.',
     type: 'Eggs',
@@ -291,7 +291,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'Quail Eggs',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description:
       '150 fresh free range quail eggs. 15 per punnet. Minimum of 10 punnets.',
     type: 'Eggs',
@@ -304,7 +304,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'R.L Stevens Leatherwood',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description: '',
     type: 'Honey',
     variants: [
@@ -336,7 +336,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'Ambrosia Organic',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description: '',
     type: 'Honey',
     variants: [
@@ -352,7 +352,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'Berringa Eucalyptus',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description: '',
     type: 'Honey',
     variants: [
@@ -364,7 +364,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'My Dads Honey Organic',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description: '',
     type: 'Honey',
     variants: [
@@ -380,7 +380,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'Raw and Unfiltered',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description: '',
     type: 'Honey',
     variants: [
@@ -396,7 +396,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'Archibald',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description: '',
     type: 'Honey',
     variants: [
@@ -408,7 +408,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'Warral',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description: '',
     type: 'Honey',
     variants: [
@@ -432,7 +432,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'Robinsons',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description: '',
     type: 'Honey',
     variants: [
@@ -452,7 +452,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'Honey Pops',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description: '',
     type: 'Honey',
     variants: [
@@ -468,7 +468,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'Straws',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description: '',
     type: 'Honey',
     variants: [
@@ -484,7 +484,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'Dipper',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description: '',
     type: 'Honey',
     variants: [
@@ -496,7 +496,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'Manuka MGO 30+',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description: '',
     type: 'Honey',
     variants: [
@@ -508,7 +508,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'Manuka MGO 100+',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description: '',
     type: 'Honey',
     variants: [
@@ -524,7 +524,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'Manuka MGO 263+',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description: '',
     type: 'Honey',
     variants: [
@@ -536,7 +536,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'Manuka MGO 400+',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description: '',
     type: 'Honey',
     variants: [
@@ -548,7 +548,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'Manuka MGO 300+',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description: '',
     type: 'Honey',
     variants: [
@@ -560,7 +560,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'Manuka MGO 900+',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description: '',
     type: 'Honey',
     variants: [
@@ -572,7 +572,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'Marri Honey',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description: '',
     type: 'Honey',
     variants: [
@@ -640,7 +640,7 @@ export const PRODUCTS: ProductCardProps[] = [
   },
   {
     name: 'Walkabout',
-    image: '/products/empty.jpg',
+    image: '/assets/products/empty.jpg',
     description: '',
     type: 'Honey',
     variants: [
