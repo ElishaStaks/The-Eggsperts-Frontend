@@ -5,6 +5,7 @@ import Features from '@/components/Features';
 import Hero from '@/components/Hero';
 import ImageGallery from '@/components/ImageGallery';
 import ProductRange from '@/components/ProductRange';
+import { FEATURES } from '@/constants';
 
 export async function generateMetadata({
   params: { locale },
@@ -26,7 +27,7 @@ export default function Index() {
       <Hero />
       <ProductRange />
       <ImageGallery />
-      <Features />
+      <Features featureItems={FEATURES} />
       <Contact />
     </>
   );

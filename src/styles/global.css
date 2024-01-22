@@ -213,7 +213,7 @@ body {
   }
 
   .nav-link-mobile-wrapper {
-    @apply flex flex-col items-center gap-4
+    @apply flex flex-col items-center gap-4 mt-10
   }
 
   .nav-link-mobile {
@@ -230,7 +230,7 @@ body {
   }
 
   .nav-menu-mobile {
-    @apply fixed inset-x-0 bottom-0 top-12 z-50 mt-10 bg-white lg:hidden
+    @apply fixed inset-x-0 bottom-0 z-50 bg-white lg:hidden
   }
 
   .nav-menu-mobile-buttons-wrapper {
@@ -260,7 +260,7 @@ body {
 
   /* PRODUCT RANGE STYLES */
   .product-item-wrapper {
-    @apply overflow-hidden rounded-lg bg-white shadow-lg transition-transform hover:scale-105 hover:shadow-xl
+    @apply overflow-hidden rounded-lg bg-white shadow-lg transform-gpu hover:scale-105 hover:shadow-xl
   }
 
   .product-item-title-wrapper {
@@ -335,7 +335,7 @@ body {
   }
 
   .contact-form-description {
-    @apply regular-16 text-gray-500 bg-none mt-3 lg:max-w-[35rem]
+    @apply regular-16 text-[#878069] bg-none mt-3 lg:max-w-[35rem]
   }
 
   .contact-form-input {
@@ -344,7 +344,7 @@ body {
 
   /* CALL TO ACTION STYLES */
   .cta-link-wrapper {
-    @apply relative inset-0 flex w-full flex-col justify-center px-[20%] md:px-[15%]
+    @apply relative inset-0 flex w-full flex-col justify-center px-[20%] md:px-[5%] lg:px-[15%]
   }
 
   .cta-wrapper {
@@ -369,7 +369,7 @@ body {
   }
 
   .about-content-wrapper {
-    @apply relative mt-[2.25rem] grid grid-cols-1 gap-20 md:mt-[5.5rem] lg:mt-[7.5rem] md:grid-cols-2
+    @apply relative mt-[2.5rem] grid grid-cols-1 gap-20 md:mt-[5.5rem] lg:mt-[7.5rem] lg:grid-cols-2
   }
 
   .about-image-wrapper {
@@ -386,11 +386,11 @@ body {
   }
 
   .product-modal-wrapper {
-    @apply w-full rounded-md bg-white p-4 sm:p-6 md:max-w-md md:p-8 lg:p-10 xl:p-12
+    @apply rounded-md bg-white p-4 sm:p-6 md:max-w-md md:p-8 lg:p-10 xl:p-12
   }
 
   .product-modal-image {
-    @apply mb-4 h-48 w-full rounded-md object-cover
+    @apply mb-4 h-80 w-full rounded-md object-cover object-center
   }
 
   .product-modal-product-name {
@@ -419,7 +419,7 @@ body {
 
   /* PRODUCT CARD STYLES */
   .product-card-wrapper {
-    @apply w-full shrink-0 cursor-pointer p-4 transition-transform hover:scale-105 sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/4
+    @apply w-full shrink-0 cursor-pointer p-4 transform-gpu hover:scale-105 sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/4
   }
 
   .product-card-sub-wrapper {
@@ -503,7 +503,7 @@ body {
   }
 
   .product-mobile-wrapper {
-    @apply max-container padding-container fixed inset-x-0 bottom-0 top-12 z-50 mt-10 
+    @apply max-container padding-container fixed inset-x-0 bottom-0 top-32 z-50 mt-10 
     bg-white lg:hidden
   }
 }
@@ -519,6 +519,25 @@ body {
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.pulsate {
+  animation: pulsate 1.5s infinite;
 }
 
 /* #e3deca - light */

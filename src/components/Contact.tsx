@@ -4,7 +4,6 @@
 
 'use client';
 
-import Image from 'next/image';
 import type { ChangeEvent, FormEvent } from 'react';
 import { useState } from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
@@ -111,32 +110,33 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contact-section-wrapper">
-      <div className="max-container padding-container mb-10 w-full">
+    <section id="contact" className="contact-section-wrapper bg-[#c6bfa8]">
+      <div className="max-container padding-container w-full">
         <div className="relative">
-          <Image
+          {/* <Image
             src="/eggs_title_icon.png"
             alt="eggs"
             width={50}
             height={50}
             className="title-icon left-[5px]"
-          />
-          <h2 className="contact-title">Contact Us</h2>
-          <p className="contact-form-description">
-            Have any general inquires? Start by filling out our form below, and
-            someone from our team will reach back to you.
-          </p>
+          /> */}
+          {/* <h2 className="contact-title">Lets discuss your enquiries</h2> */}
         </div>
       </div>
       <div className="contact-main-wrapper">
         {/* Use lg:justify-between to separate the contact form and map on large screens */}
         <div className="z-20 flex w-full flex-col lg:mr-10 lg:w-full">
           {/* Specify width for the contact form on large screens */}
-          <div className="border-1 rounded-md bg-[#e3deca] p-6 shadow-lg">
+          <div className="rounded-md border-2 border-[#fff] bg-[#e3deca] p-6 shadow-lg">
             <div className="mb-6">
-              {/* <h2 className="contact-form-title">
+              <h2 className="contact-form-title">
                 <span className="mr-2">✉️</span> Write to us
-              </h2> */}
+              </h2>
+              <p className="contact-form-description">
+                Already got an egg supplier? Send us two invoices and we will do
+                our best to crack their prices. Start by filling out our form
+                below, and someone from our team will get back to you.
+              </p>
             </div>
             <form onSubmit={handleSubmit} className="bg-[#e3deca]">
               <div className="mb-4">
@@ -217,8 +217,8 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="shadow-xl lg:w-full">
-          <GoogleMaps lat={-37.80750711160688} lng={144.95677959602912} />
+        <div className="hidden shadow-xl lg:block lg:w-full">
+          <GoogleMaps lat={-37.8064932} lng={144.9571063} />
         </div>
       </div>
     </section>

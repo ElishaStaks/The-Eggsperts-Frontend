@@ -44,7 +44,9 @@ function GoogleMaps({ lat, lng }: MapProps) {
     initMap();
   }, [lat, lng]);
 
-  return <div className="h-full" ref={mapRef} />;
+  return (
+    <div className="h-full rounded-md border-2 border-white" ref={mapRef} />
+  );
 }
 
 export default GoogleMaps;

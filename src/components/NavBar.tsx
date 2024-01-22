@@ -8,7 +8,11 @@ import { NAV_LINKS } from '../constants';
 import { useBodyOverflow } from '../hooks/BodyOverflow';
 import Button from './Button';
 
-const Navbar = () => {
+type NavbarProps = {
+  page: string;
+};
+
+const Navbar: React.FC<NavbarProps> = ({ page }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useBodyOverflow(isMenuOpen);
@@ -22,7 +26,7 @@ const Navbar = () => {
       <div className="max-container flexBetween padding-container">
         <Link href="/" className="logo-link">
           <Image
-            src="/test.jpg"
+            src="/logo.jpg"
             alt="Responsive no image"
             className="rounded-full"
             width={200}
@@ -61,7 +65,11 @@ const Navbar = () => {
 
       {/* Responsive navigation menu */}
       {isMenuOpen && (
-        <div className="max-container padding-container nav-menu-mobile">
+        <div
+          className={`max-container padding-container nav-menu-mobile ${
+            page === '/products' ? 'top-40' : 'top-24'
+          }`}
+        >
           <ul className="nav-link-mobile-wrapper">
             {NAV_LINKS.map((link) => (
               <Link
