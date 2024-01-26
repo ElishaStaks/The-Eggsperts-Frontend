@@ -5,15 +5,8 @@ import Button from './Button';
 const Hero = () => {
   return (
     <section className="hero-section-wrapper">
-      <div>
-        <Image
-          src="/hero_cooked_eggs.jpg"
-          alt="Background"
-          className="object-cover"
-          fill
-        />
-        <div className="absolute inset-0 bg-black opacity-50" />
-      </div>
+      <Image src="/hero.jpg" alt="Background" className="object-cover" fill />
+      <div className="absolute inset-0 bg-black opacity-50" />
       <div className="max-container padding-container relative z-20 flex flex-1 flex-col xl:w-1/2">
         <Image
           src="/eggs_title_icon.png"

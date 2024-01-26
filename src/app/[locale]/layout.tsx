@@ -47,7 +47,7 @@ export default function RootLayout({
   const messages = useMessages();
 
   return (
-    <html lang={locale}>
+    <html suppressHydrationWarning lang={locale}>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}

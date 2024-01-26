@@ -105,24 +105,12 @@ const Contact = () => {
       setFormData(initialFormData);
     } else {
       setLoading(false);
-      toast.success('Message failed to send');
+      toast.error('Message failed to send');
     }
   };
 
   return (
     <section id="contact" className="contact-section-wrapper bg-[#c6bfa8]">
-      <div className="max-container padding-container w-full">
-        <div className="relative">
-          {/* <Image
-            src="/eggs_title_icon.png"
-            alt="eggs"
-            width={50}
-            height={50}
-            className="title-icon left-[5px]"
-          /> */}
-          {/* <h2 className="contact-title">Lets discuss your enquiries</h2> */}
-        </div>
-      </div>
       <div className="contact-main-wrapper">
         {/* Use lg:justify-between to separate the contact form and map on large screens */}
         <div className="z-20 flex w-full flex-col lg:mr-10 lg:w-full">

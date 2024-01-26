@@ -13,7 +13,7 @@ const CallToAction = () => {
             <div className="cta-wrapper">
               <Link href="/#contact" className="cta-link-wrapper">
                 <Image
-                  src="/chicken_cta.png"
+                  src="/chicken_cta.jpg"
                   alt="Responsive no image"
                   className="rounded-full"
                   width={1000}

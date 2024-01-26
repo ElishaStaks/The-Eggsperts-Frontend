@@ -41,7 +41,7 @@ const AboutUs = () => {
                         alt="eggs"
                         width={50}
                         height={50}
-                        className="title-icon"
+                        className="absolute left-[-5px] top-[-45px] w-10 lg:w-[50px]"
                       />
                     </div>
                     <h3 className="bold-20 lg:bold-32 mb-[0.75rem] capitalize">
