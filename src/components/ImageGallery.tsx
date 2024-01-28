@@ -18,6 +18,7 @@ const ImageItem = ({ key, image }: ImageItem) => {
             alt={`Responsive image + ${key}`}
             fill
             className="rounded-t-lg object-cover"
+            sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
           />
         </div>
       </div>

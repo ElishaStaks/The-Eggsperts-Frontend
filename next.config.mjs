@@ -18,6 +18,14 @@ export default withSentryConfig(
         },
       ];
     },
+    async rewrites() {
+      return [
+        {
+          source: '/api/sendEmail',
+          destination: '/src/app/api/sendEmail',
+        },
+      ];
+    },
     // Other Next.js configuration options can go here
   }),
   {
