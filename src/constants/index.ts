@@ -25,19 +25,19 @@ export const TEAM = [
 export const MISSION_VALUES = [
   {
     title: 'Commitment to Quality',
-    icon: '/assets/svgs/farm.svg',
+    icon: '/assets/svgs/quality.svg',
     description:
       'Quality is at the heart of everything we do. From the selection of our suppliers to the careful handling of our products, we are dedicated to maintaining the highest standards throughout every step of the process. We believe that our customers deserve nothing less than the best.',
   },
   {
     title: 'Transparency and Integrity',
-    icon: '/assets/svgs/eggs.svg',
+    icon: '/assets/svgs/swords.svg',
     description:
       "Transparency is a core value at The Eggsperts. We believe in providing our customers with complete information about our products, sourcing practices, and business operations. It's this commitment to openness and integrity that sets us apart and builds trust with our valued customers.",
   },
   {
     title: 'Customer Satisfaction',
-    icon: '/assets/svgs/honey_jar.svg',
+    icon: '/assets/svgs/happy.svg',
     description:
       'Our customers are at the center of everything we do. We value your feedback and continuously work towards enhancing your experience with The Eggsperts. Your satisfaction is our priority, and we are committed to ensuring that every interaction with us leaves you delighted.',
   },
@@ -67,19 +67,19 @@ export const FEATURES: FeatureItem[] = [
 
 export const IMAGES_GALLERY = [
   {
-    image: '/egg_in_bowl.png',
+    image: '/egg_bowl_1.jpg',
     key: 'image-1',
   },
   {
-    image: '/egg_in_bowl_2.png',
-    key: 'image-2',
-  },
-  {
-    image: '/eggs_in_bowl_4.png',
+    image: '/egg_bowl_2.jpg',
     key: 'image-2',
   },
   {
     image: '/egg_bowl_3.jpg',
+    key: 'image-2',
+  },
+  {
+    image: '/egg_bowl_4.jpg',
     key: 'image-2',
   },
 ];
@@ -778,7 +778,7 @@ export const FOOTER_CONTACT_INFO = {
   links: [
     {
       label: 'Location',
-      value: 'Queen Victoria Market, Queen St, Melbourne VIC 3000',
+      value: 'Queen Victoria Market',
       href: '',
     },
     { label: 'Phone', value: '0433 696 596', href: '' },
