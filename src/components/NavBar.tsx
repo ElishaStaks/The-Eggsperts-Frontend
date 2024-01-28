@@ -9,7 +9,7 @@ import { useBodyOverflow } from '../hooks/BodyOverflow';
 import Button from './Button';
 
 type NavbarProps = {
-  page: string;
+  page?: string;
 };
 
 const Navbar: React.FC<NavbarProps> = ({ page }) => {

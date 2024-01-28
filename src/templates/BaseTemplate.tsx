@@ -9,7 +9,7 @@ import Navbar from '@/components/NavBar';
 
 type IBaseTemplateProps = {
   banner?: ReactNode;
-  currentPage: string;
+  currentPage?: string;
   children: ReactNode;
 };
 

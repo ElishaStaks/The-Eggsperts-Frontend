@@ -1,9 +1,6 @@
 import { withSentryConfig } from '@sentry/nextjs';
 /* eslint-disable import/no-extraneous-dependencies, import/extensions */
 import withBundleAnalyzer from '@next/bundle-analyzer';
-import withNextIntl from 'next-intl/plugin';
-
-const withNextIntlConfig = withNextIntl('./src/libs/i18n.ts');
 
 const bundleAnalyzer = withBundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',
@@ -11,26 +8,18 @@ const bundleAnalyzer = withBundleAnalyzer({
 
 /** @type {import('next').NextConfig} */
 export default withSentryConfig(
-  bundleAnalyzer(
-    withNextIntlConfig({
-      eslint: {
-        dirs: ['.'],
-      },
-      poweredByHeader: false,
-      reactStrictMode: true,
-      webpack: (config) => {
-        // config.externals is needed to resolve the following errors:
-        // Module not found: Can't resolve 'bufferutil'
-        // Module not found: Can't resolve 'utf-8-validate'
-        config.externals.push({
-          bufferutil: 'bufferutil',
-          'utf-8-validate': 'utf-8-validate',
-        });
-
-        return config;
-      },
-    }),
-  ),
+  bundleAnalyzer({
+    async redirects() {
+      return [
+        {
+          source: '/',
+          destination: '/home',
+          permanent: true,
+        },
+      ];
+    },
+    // Other Next.js configuration options can go here
+  }),
   {
     // For all available options, see:
     // https://github.com/getsentry/sentry-webpack-plugin#options
