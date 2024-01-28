@@ -2,13 +2,12 @@
 
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Loader } from '@googlemaps/js-api-loader';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
 import type { MapProps } from '../types';
 
 function GoogleMaps({ lat, lng }: MapProps) {
   const mapRef = useRef<HTMLDivElement>(null);
-  const [isMapApiLoaded, setIsMapApiLoaded] = useState(false);
 
   useEffect(() => {
     const initMap = async () => {
@@ -16,8 +15,6 @@ function GoogleMaps({ lat, lng }: MapProps) {
         apiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY as string,
         version: 'weekly',
       });
-
-      loader.load().then(() => setIsMapApiLoaded(true));
 
       const { Map } = await loader.importLibrary('maps');
       const { Marker } = (await loader.importLibrary(
@@ -45,7 +42,7 @@ function GoogleMaps({ lat, lng }: MapProps) {
     };
 
     initMap();
-  }, [isMapApiLoaded, lat, lng]);
+  }, [lat, lng]);
 
   return (
     <div className="h-full rounded-md border-2 border-white" ref={mapRef} />

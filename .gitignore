@@ -44,12 +44,9 @@ npm-debug.log*
 pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-firebase-debug.log*
 
 # local env files
 .env*.local
-.env*.development
-.env*.production
 
 # local folder
 local
@@ -59,5 +56,3 @@ local
 
 # Sentry Config File
 .sentryclirc
-
-firebase.js

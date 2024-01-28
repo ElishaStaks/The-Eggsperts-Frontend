@@ -27,8 +27,8 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
         <Link href="/" className="logo-link">
           <Image
             src="/logo.jpg"
-            alt="Logo"
-            className="h-auto w-auto rounded-full"
+            alt="Responsive no image"
+            className="rounded-full"
             width={200}
             height={200}
           />
@@ -67,7 +67,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
       {isMenuOpen && (
         <div
           className={`max-container padding-container nav-menu-mobile ${
-            page === '/products' ? 'top-40' : 'top-16'
+            page === '/products' ? 'top-40' : 'top-24'
           }`}
         >
           <ul className="nav-link-mobile-wrapper">
