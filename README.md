@@ -30,4 +30,4 @@ For inquiries or collaborations, feel free to reach out to us via the contact fo
 
 Explore the Eggsperts Showcase and discover the excellence behind every egg!
 
-![Eggsperts Showcase](assets/eggsperts-screenshot.png)
+![Eggsperts Showcase](/eggsperts-screenshot.png)
