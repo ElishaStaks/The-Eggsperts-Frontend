@@ -1,5 +1,7 @@
 # The Eggsperts
 
+![Eggsperts Showcase](https://github.com/ElishaStaks/The-Eggsperts-Frontend/blob/master/public/eggsperts-screenshot.png)
+
 ## Description
 
 Welcome to The Eggsperts, a Next.js website that introduces a local business specializing in high-quality eggs and honey related products. This site serves as a platform to showcase the expertise of the Eggsperts, providing valuable information about their origins, product offerings, and a convenient way to get in touch.
@@ -29,5 +31,3 @@ Welcome to The Eggsperts, a Next.js website that introduces a local business spe
 For inquiries or collaborations, feel free to reach out to us via the contact form on our website.
 
 Explore the Eggsperts Showcase and discover the excellence behind every egg!
-
-![Eggsperts Showcase](/eggsperts-screenshot.png)
