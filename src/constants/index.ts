@@ -1,6 +1,6 @@
 import type { FeatureItem } from '@/components/Features';
 
-import type { FilterType, ProductCardProps } from '../types';
+import type { FilterType, ProductProps } from '../types';
 
 // NAVIGATION
 export const NAV_LINKS = [
@@ -104,8 +104,9 @@ export const PRODUCT_RANGE = [
   },
 ];
 
-export const PRODUCTS: ProductCardProps[] = [
+export const PRODUCTS: ProductProps[] = [
   {
+    handle: '600-caged-trays',
     name: '600 Caged Trays',
     image: '/assets/products/600_cage_trays.webp',
     description: '180 large fresh caged eggs in filler trays.',
@@ -118,6 +119,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: '700-caged-trays',
     name: '700 Caged Trays',
     image: '/assets/products/700_cage_trays.webp',
     description: '180 extra large fresh caged eggs in filler trays.',
@@ -130,6 +132,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: '70-plus-caged-trays',
     name: '70+ Caged Trays',
     image: '/assets/products/empty.webp',
     description:
@@ -143,6 +146,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: '800-caged-trays',
     name: '800 Caged Trays',
     image: '/assets/products/800_cage_trays.webp',
     description: '180 jumbo fresh caged eggs in filler trays.',
@@ -155,6 +159,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: '700-free-range-trays',
     name: '700 Free Range Trays',
     image: '/assets/products/fr_trays.webp',
     description:
@@ -168,6 +173,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: '75-plus-free-range-trays',
     name: '75+ Free Range Trays',
     image: '/assets/products/75+_trays.webp',
     description:
@@ -181,6 +187,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: '700-caged-dozens',
     name: '700 Caged Dozens',
     image: '/assets/products/700_cage_doz.webp',
     description: '180 extra large fresh caged eggs. 15 dozens per box.',
@@ -193,6 +200,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: '700-golden-yolk-trays',
     name: '700 Golden Yolk Trays',
     image: '/assets/products/700_gy_trays.webp',
     description: '180 extra large fresh free range eggs in filler trays.',
@@ -205,6 +213,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: '800-caged-dozens',
     name: '800 Caged Dozens',
     image: '/assets/products/800_cage_doz.webp',
     description: '180 jumbo fresh caged eggs. 15 dozens per box.',
@@ -217,6 +226,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: '600-organic-trays',
     name: '600 Organic Trays',
     image: '/assets/products/600_organic_trays.webp',
     description: '180 large fresh free range organic eggs.',
@@ -229,6 +239,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: '600-golden-yolk-dozens',
     name: '600 Golden Yolk Dozens',
     image: '/assets/products/600_golden_yolk.webp',
     description:
@@ -242,6 +253,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: '700-golden-yolk-dozens',
     name: '700 Golden Yolk Dozens',
     image: '/assets/products/700_golden_yolk.webp',
     description:
@@ -255,6 +267,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: '850-free-range',
     name: '850 Free Range',
     image: '/assets/products/850.webp',
     description:
@@ -268,6 +281,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'henzen',
     name: 'Henzen',
     image: '/assets/products/henzen.webp',
     description:
@@ -281,6 +295,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'joannes',
     name: "Joanne's",
     image: '/assets/products/joannes.webp',
     description:
@@ -294,6 +309,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'cracking-eggs',
     name: 'Cracking Eggs',
     image: '/assets/products/cracking.webp',
     description:
@@ -307,6 +323,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'earth-eggs',
     name: 'Earth Eggs',
     image: '/assets/products/earth.webp',
     description:
@@ -320,6 +337,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'honest-eggs',
     name: 'Honest Eggs',
     image: '/assets/products/honest.webp',
     description:
@@ -333,6 +351,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'kiss-n-run',
     name: 'Kiss n Run',
     image: '/assets/products/kiss_n_run.webp',
     description:
@@ -346,6 +365,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'chook-at-the-rooke',
     name: 'Chook At The Rooke',
     image: '/assets/products/chooks_at_the_rooks.webp',
     description:
@@ -359,6 +379,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'milawa',
     name: 'Milawa',
     image: '/assets/products/800_milawa_doz.webp',
     description:
@@ -372,6 +393,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'smoked-eggs',
     name: 'Smoked Eggs',
     image: '/assets/products/smoked_eggs.webp',
     description:
@@ -385,6 +407,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'quail-eggs',
     name: 'Quail Eggs',
     image: '/assets/products/empty.webp',
     description:
@@ -398,6 +421,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'rl-stevens-leatherwood',
     name: 'R.L Stevens Leatherwood',
     image: '/assets/products/empty.webp',
     description: '',
@@ -430,6 +454,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'ambrosia-organic',
     name: 'Ambrosia Organic',
     image: '/assets/products/empty.webp',
     description: '',
@@ -446,6 +471,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'berringa-eucalyptus',
     name: 'Berringa Eucalyptus',
     image: '/assets/products/empty.webp',
     description: '',
@@ -458,6 +484,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'my-dads-honey-organic',
     name: 'My Dads Honey Organic',
     image: '/assets/products/empty.webp',
     description: '',
@@ -474,6 +501,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'raw-and-unfiltered',
     name: 'Raw and Unfiltered',
     image: '/assets/products/empty.webp',
     description: '',
@@ -490,6 +518,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'archibald',
     name: 'Archibald',
     image: '/assets/products/empty.webp',
     description: '',
@@ -502,6 +531,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'warral',
     name: 'Warral',
     image: '/assets/products/empty.webp',
     description: '',
@@ -526,6 +556,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'robinsons',
     name: 'Robinsons',
     image: '/assets/products/empty.webp',
     description: '',
@@ -546,6 +577,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'honey-pops',
     name: 'Honey Pops',
     image: '/assets/products/empty.webp',
     description: '',
@@ -562,6 +594,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'straws',
     name: 'Straws',
     image: '/assets/products/empty.webp',
     description: '',
@@ -578,6 +611,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'dipper',
     name: 'Dipper',
     image: '/assets/products/empty.webp',
     description: '',
@@ -590,6 +624,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'manuka-mgo-30-plus',
     name: 'Manuka MGO 30+',
     image: '/assets/products/empty.webp',
     description: '',
@@ -602,6 +637,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'manuka-mgo-100-plus',
     name: 'Manuka MGO 100+',
     image: '/assets/products/empty.webp',
     description: '',
@@ -618,6 +654,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'manuka-mgo-263-plus',
     name: 'Manuka MGO 263+',
     image: '/assets/products/empty.webp',
     description: '',
@@ -630,6 +667,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'manuka-mgo-400-plus',
     name: 'Manuka MGO 400+',
     image: '/assets/products/empty.webp',
     description: '',
@@ -642,6 +680,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'manuka-mgo-300-plus',
     name: 'Manuka MGO 300+',
     image: '/assets/products/empty.webp',
     description: '',
@@ -654,6 +693,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'manuka-mgo-900-plus',
     name: 'Manuka MGO 900+',
     image: '/assets/products/empty.webp',
     description: '',
@@ -666,6 +706,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'marri-honey',
     name: 'Marri Honey',
     image: '/assets/products/empty.webp',
     description: '',
@@ -734,6 +775,7 @@ export const PRODUCTS: ProductCardProps[] = [
     ],
   },
   {
+    handle: 'walkabout',
     name: 'Walkabout',
     image: '/assets/products/empty.webp',
     description: '',

@@ -1,11 +1,11 @@
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 import { PRODUCTS } from '../constants';
-import type { ProductCardProps, ProductListProps } from '../types';
+import type { ProductListProps } from '../types';
 import Button from './Button';
 import ProductCard from './ProductCard';
-import ProductModal from './ProductModal';
 
 const productsPerPage = 15;
 const productsPerLoadMore = 5;
@@ -14,8 +14,7 @@ const ProductList: React.FC<ProductListProps> = ({
   filters,
   onFilterIconClick,
 }) => {
-  const [selectedProduct, setSelectedProduct] =
-    useState<ProductCardProps | null>(null);
+  const router = useRouter();
   const [displayedProducts, setDisplayedProducts] = useState(productsPerPage);
 
   const filteredProducts =
@@ -27,6 +26,11 @@ const ProductList: React.FC<ProductListProps> = ({
 
   const handleLoadMore = () => {
     setDisplayedProducts((prev) => prev + productsPerLoadMore);
+  };
+
+  // Function to handle product card click and navigate to the product page
+  const handleProductClick = (handle: string) => {
+    router.push(`/products/${encodeURIComponent(handle.toLowerCase())}`);
   };
 
   return (
@@ -50,15 +54,17 @@ const ProductList: React.FC<ProductListProps> = ({
       <div className="product-list-card-wrapper">
         {visibleProducts.map((product) => (
           <ProductCard
-            key={product.name}
+            key={product.handle}
+            handle={product.handle}
             name={product.name}
             image={product.image}
             type={product.type}
             variants={product.variants}
-            onClick={() => setSelectedProduct(product)}
+            onClick={() => handleProductClick(product.handle)}
           />
         ))}
       </div>
+
       {displayedProducts < filteredProducts.length && (
         <>
           <div className="product-list-viewed-wrapper">
@@ -76,13 +82,6 @@ const ProductList: React.FC<ProductListProps> = ({
             />
           </div>
         </>
-      )}
-      {selectedProduct !== null && (
-        <ProductModal
-          open={!!selectedProduct}
-          product={selectedProduct}
-          onClose={() => setSelectedProduct(null)}
-        />
       )}
     </div>
   );

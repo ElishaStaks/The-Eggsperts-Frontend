@@ -1,21 +1,16 @@
-export interface ProductCardProps {
+export interface ProductProps {
+  handle: string;
   name: string;
   image: string;
   description?: string;
   type: string;
   variants: ProductVariantProps[];
-  onClick?: () => void;
+  onClick?: (handle: string) => void;
 }
 
 export interface ProductVariantProps {
   name: string;
   price: number;
-}
-
-export interface ProductModalProps {
-  open: boolean;
-  product: ProductCardProps;
-  onClose: () => void;
 }
 
 export interface ProductListProps {

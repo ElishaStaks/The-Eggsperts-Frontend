@@ -73,7 +73,7 @@ body {
   }
 
   .btn_dark_green {
-    @apply bg-gray-900 px-8 py-4 text-white transition-all
+    @apply bg-gray-900 px-8 py-5 text-white transition-all
   }
 
   .btn_dark_green_outline {
@@ -374,47 +374,6 @@ body {
 
   .about-image-wrapper {
     @apply relative inset-0 flex w-full justify-center
-  }
-
-  /* PRODUCT MODAL STYLES */
-  .product-modal-variant-name {
-    @apply mr-2 flex h-[72px] w-[100px] items-center justify-center rounded-xl border-2 p-1 text-center
-  }
-
-  .product-modal-bg {
-    @apply fixed inset-0 z-50 flex min-h-screen items-center justify-center
-  }
-
-  .product-modal-wrapper {
-    @apply rounded-md bg-white p-10 max-w-[30rem]
-  }
-
-  .product-modal-image {
-    @apply mb-4 h-80 w-full rounded-md object-cover object-center
-  }
-
-  .product-modal-product-name {
-    @apply mb-2 text-2xl font-bold md:text-3xl
-  }
-
-  .product-modal-description {
-    @apply mb-4 text-gray-600
-  }
-
-  .product-modal-variant-size {
-    @apply mb-2 text-lg font-semibold
-  }
-
-  .product-modal-variants-wrapper {
-    @apply relative mb-4 overflow-hidden
-  }
-
-  .product-modal-variant-price {
-    @apply text-lg font-semibold text-gray-600
-  }
-
-  .product-modal-buttons-wrapper {
-    @apply mt-6 flex flex-col justify-between sm:flex-row
   }
 
   /* PRODUCT CARD STYLES */

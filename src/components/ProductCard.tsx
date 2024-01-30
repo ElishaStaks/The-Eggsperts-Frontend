@@ -4,12 +4,12 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
 
-import type { ProductCardProps } from '../types';
+import type { ProductProps } from '../types';
 
-const ProductCard: React.FC<ProductCardProps> = ({
+const ProductCard: React.FC<ProductProps> = ({
+  handle,
   name,
   image,
   type,
@@ -24,7 +24,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   };
 
   return (
-    <div className="product-card-wrapper" onClick={onClick}>
+    <div className="product-card-wrapper" onClick={() => onClick?.(handle)}>
       <div className="product-card-sub-wrapper">
         <div className="product-card-image-wrapper">
           <Image
@@ -37,18 +37,16 @@ const ProductCard: React.FC<ProductCardProps> = ({
           />
         </div>
         <div className="product-card-content-wrapper">
-          <h3 className="product-card-name">{name}</h3>
+          <h3
+            className={`product-card-name ${type === 'Eggs' && 'text-center'}`}
+          >
+            {name}
+          </h3>
           {type === 'Honey' && (
             <p className="product-card-price">{getFirstVariantPrice()}</p>
           )}
           <div className="grow" />
-          <Link
-            href="/#contact"
-            className="product-card-contact"
-            onClick={(e) => e.stopPropagation()}
-          >
-            Contact Us
-          </Link>
+          <div className="product-card-contact">Learn More</div>
         </div>
       </div>
     </div>

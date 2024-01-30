@@ -19,8 +19,6 @@ const Products = () => {
 
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
-    // eslint-disable-next-line no-console
-    console.log(showSidebar);
   };
 
   return (
