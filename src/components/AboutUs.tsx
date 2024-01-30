@@ -12,10 +12,11 @@ const AboutUs = () => {
             <div className="max-w-[55rem]">
               <Image
                 src="/eggs_title_icon.png"
-                alt="eggs"
+                alt="Basket of farm fresh eggs"
                 width={50}
                 height={50}
                 className="title-icon left-[5px]"
+                loading="lazy"
               />
               <h1 className="about-title">
                 Your Trusted Source for Fresh Eggs and Pure Honey
@@ -30,6 +31,7 @@ const AboutUs = () => {
                   className="object-cover"
                   width={2000}
                   height={2000}
+                  loading="lazy"
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -38,10 +40,11 @@ const AboutUs = () => {
                     <div className="relative">
                       <Image
                         src="/eggs_title_icon.png"
-                        alt="eggs"
+                        alt="Basket of farm fresh eggs"
                         width={50}
                         height={50}
                         className="absolute left-[-5px] top-[-50px] w-10 lg:w-[50px]"
+                        loading="lazy"
                       />
                     </div>
                     <h3 className="bold-20 lg:bold-32 mb-[0.75rem] capitalize">

@@ -386,7 +386,7 @@ body {
   }
 
   .product-modal-wrapper {
-    @apply rounded-md bg-white p-4 sm:p-6 md:max-w-md md:p-8 lg:p-10 xl:p-12
+    @apply rounded-md bg-white p-10 md:max-w-lg
   }
 
   .product-modal-image {
@@ -453,7 +453,7 @@ body {
 
   /* PRODUCT FILTER STYLES */
   .product-filter-wrapper {
-    @apply mr-10 w-full flex-col items-start
+    @apply mr-10 w-full flex-col items-start mt-10
   }
 
   .product-filter-title {
@@ -503,7 +503,7 @@ body {
   }
 
   .product-mobile-wrapper {
-    @apply max-container padding-container fixed inset-x-0 bottom-0 top-32 z-50 mt-10 
+    @apply max-container padding-container fixed inset-x-0 bottom-0 top-0 z-50 
     bg-white lg:hidden
   }
 }
@@ -527,7 +527,7 @@ body {
     opacity: 1;
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.);
     opacity: 1;
   }
   100% {

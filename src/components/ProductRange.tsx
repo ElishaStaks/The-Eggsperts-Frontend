@@ -20,6 +20,7 @@ const ProductItem = ({ title, image }: ProductItem) => {
             fill
             className="rounded-t-lg object-cover"
             sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
+            loading="lazy"
           />
         </div>
         <div className="product-item-title-wrapper">
@@ -38,10 +39,11 @@ const ProductRange = () => {
           <div className="relative">
             <Image
               src="/eggs_title_icon.png"
-              alt="eggs"
+              alt="Basket of farm fresh eggs"
               width={50}
               height={50}
               className="title-icon left-[5px]"
+              loading="lazy"
             />
             <h2 className="bold-40 lg:bold-64">Our Product Range</h2>
           </div>

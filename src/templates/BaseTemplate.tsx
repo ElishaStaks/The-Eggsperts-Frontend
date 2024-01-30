@@ -9,7 +9,6 @@ import Navbar from '@/components/NavBar';
 
 type IBaseTemplateProps = {
   banner?: ReactNode;
-  currentPage?: string;
   children: ReactNode;
 };
 
@@ -17,7 +16,7 @@ const BaseTemplate = (props: IBaseTemplateProps) => {
   return (
     <>
       {props.banner}
-      <Navbar page={props.currentPage} />
+      <Navbar />
       <Toaster expand position="top-right" richColors />
       <main className="relative overflow-hidden">{props.children}</main>
       <Footer />

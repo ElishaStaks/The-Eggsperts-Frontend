@@ -7,17 +7,18 @@ import { MISSION_VALUES } from '@/constants';
 type MissionItem = {
   title: string;
   icon: string;
+  alt: string;
   description: string;
 };
 
 // eslint-disable-next-line @typescript-eslint/no-redeclare
-const MissionItem = ({ title, icon, description }: MissionItem) => {
+const MissionItem = ({ title, icon, alt, description }: MissionItem) => {
   return (
     <div className="flex max-w-[34rem] flex-col items-start lg:max-w-[30rem] lg:flex-row">
       <div className="flex items-center justify-center">
         <Image
           src={icon}
-          alt="map"
+          alt={alt}
           width={40} // default width for smaller screens
           height={40} // default height for smaller screens
           className="lg:w-[300px]"
@@ -33,7 +34,7 @@ const MissionItem = ({ title, icon, description }: MissionItem) => {
 
 const Mission = () => {
   return (
-    <section className="flexCenter flex-col overflow-hidden bg-[#c6bfa8] py-24 lg:pb-[8rem] lg:pt-[9rem]">
+    <section className="flexCenter flex-col overflow-hidden bg-[#e3deca] py-24 lg:pb-[8rem] lg:pt-[9rem]">
       <div className="max-container padding-container relative w-full justify-center">
         <div className="grid justify-between gap-y-16 lg:grid-cols-2 lg:gap-x-16">
           <div className="relative flex flex-col items-start">
@@ -62,6 +63,7 @@ const Mission = () => {
                 key={mission.title}
                 title={mission.title}
                 icon={mission.icon}
+                alt={mission.alt}
                 description={mission.description}
               />
             ))}

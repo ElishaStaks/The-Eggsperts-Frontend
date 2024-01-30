@@ -26,18 +26,21 @@ export const MISSION_VALUES = [
   {
     title: 'Commitment to Quality',
     icon: '/assets/svgs/quality.svg',
+    alt: 'The eggsperts and their commitment to quality badge icon',
     description:
       'Quality is at the heart of everything we do. From the selection of our suppliers to the careful handling of our products, we are dedicated to maintaining the highest standards throughout every step of the process. We believe that our customers deserve nothing less than the best.',
   },
   {
     title: 'Transparency and Integrity',
     icon: '/assets/svgs/swords.svg',
+    alt: 'The eggsperts and their transparency and integrity badge icon',
     description:
       "Transparency is a core value at The Eggsperts. We believe in providing our customers with complete information about our products, sourcing practices, and business operations. It's this commitment to openness and integrity that sets us apart and builds trust with our valued customers.",
   },
   {
     title: 'Customer Satisfaction',
     icon: '/assets/svgs/happy.svg',
+    alt: 'The eggsperts and their priority for customer satisfaction',
     description:
       'Our customers are at the center of everything we do. We value your feedback and continuously work towards enhancing your experience with The Eggsperts. Your satisfaction is our priority, and we are committed to ensuring that every interaction with us leaves you delighted.',
   },
@@ -48,18 +51,21 @@ export const FEATURES: FeatureItem[] = [
   {
     title: 'Locally sourced ingredients',
     icon: '/assets/svgs/farm.svg',
+    alt: 'Locally sourced ingredients barn yard icon',
     description:
       'From the farm to your table, enjoy the goodness of locally procured, premium-quality ingredients.',
   },
   {
     title: 'Farm fresh eggs',
     icon: '/assets/svgs/eggs.svg',
+    alt: 'Farm fresh eggs icon',
     description:
       'Indulge in the richness of eggs laid with care, ensuring each bite is a wholesome delight.',
   },
   {
     title: 'Delicious and nutrious',
     icon: '/assets/svgs/honey_jar.svg',
+    alt: 'Sweet honey in a tub icon',
     description:
       'Explore our range of delicious honey, packed with natural sweetness and nutritional benefits.',
   },

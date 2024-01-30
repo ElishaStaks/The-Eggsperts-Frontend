@@ -6,16 +6,23 @@ const Hero = () => {
   return (
     <section className="hero-section-wrapper">
       <div>
-        <Image src="/hero.jpg" alt="Background" className="object-cover" fill />
+        <Image
+          src="/hero.jpg"
+          alt="Big breakfast meal with 2 cooked farm fresh eggs from The"
+          className="object-cover"
+          fill
+          loading="eager"
+        />
         <div className="absolute inset-0 bg-black opacity-50" />
       </div>
       <div className="max-container padding-container relative z-20 flex flex-1 flex-col xl:w-1/2">
         <Image
           src="/eggs_title_icon.png"
-          alt="eggs"
+          alt="Basket of farm fresh eggs"
           width={50}
           height={50}
           className="absolute top-[-30px] w-10 lg:w-[50px]"
+          loading="eager"
         />
         <h1 className="hero-title">Taste Farm Fresh</h1>
         <h1 className="hero-title">Goodness</h1>

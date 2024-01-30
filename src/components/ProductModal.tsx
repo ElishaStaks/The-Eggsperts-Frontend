@@ -127,7 +127,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
         ) : (
           <Image
             src="/assets/svgs/right_arrow.svg"
-            alt="left_arrow"
+            alt="right_arrow"
             width={24}
             height={24}
           />
@@ -151,6 +151,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
               className="product-modal-image"
               width={2000}
               height={2000}
+              loading="lazy"
             />
             <h2 className="product-modal-product-name">{product.name}</h2>
             <p className="product-modal-description">{product.description}</p>

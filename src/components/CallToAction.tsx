@@ -13,11 +13,12 @@ const CallToAction = () => {
             <div className="cta-wrapper">
               <Link href="/#contact" className="cta-link-wrapper">
                 <Image
-                  src="/chicken_cta.png"
-                  alt="Responsive no image"
+                  src="/chicken.jpg"
+                  alt="Cute artistic chicken with glasses holding a magnifying glass"
                   className="rounded-full"
                   width={1000}
                   height={1000}
+                  loading="lazy"
                 />
               </Link>
               <div className="cta-content-wrapper">

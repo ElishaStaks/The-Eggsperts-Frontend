@@ -8,11 +8,7 @@ import { NAV_LINKS } from '../constants';
 import { useBodyOverflow } from '../hooks/BodyOverflow';
 import Button from './Button';
 
-type NavbarProps = {
-  page?: string;
-};
-
-const Navbar: React.FC<NavbarProps> = ({ page }) => {
+const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useBodyOverflow(isMenuOpen);
@@ -27,10 +23,11 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
         <Link href="/" className="logo-link">
           <Image
             src="/logo.jpg"
-            alt="Responsive no image"
+            alt="The eggsperts chicken and bee logo"
             className="rounded-full"
             width={200}
             height={200}
+            loading="eager"
           />
         </Link>
 
@@ -38,10 +35,11 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
         <Image
           className="nav-menu-icon"
           src="/assets/svgs/menu.svg"
-          alt="menu"
+          alt="The eggsperts hamburger icon"
           width={32}
           height={32}
           onClick={handleMenuClick}
+          loading="eager"
         />
 
         {/* On larger screens (lg and xl), display the regular navigation links and shop now button */}
@@ -65,11 +63,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
 
       {/* Responsive navigation menu */}
       {isMenuOpen && (
-        <div
-          className={`max-container padding-container nav-menu-mobile ${
-            page === '/products' ? 'top-40' : 'top-24'
-          }`}
-        >
+        <div className="max-container padding-container nav-menu-mobile top-0">
           <ul className="nav-link-mobile-wrapper">
             {NAV_LINKS.map((link) => (
               <Link

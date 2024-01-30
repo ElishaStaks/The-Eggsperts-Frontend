@@ -15,10 +15,11 @@ const ImageItem = ({ key, image }: ImageItem) => {
         <div className="relative h-48">
           <Image
             src={image}
-            alt={`Responsive image + ${key}`}
+            alt={`Farm fresh eggs and sweet honey-${key}`}
             fill
             className="rounded-t-lg object-cover"
             sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
+            loading="lazy"
           />
         </div>
       </div>

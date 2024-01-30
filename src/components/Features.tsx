@@ -3,18 +3,20 @@ import Image from 'next/image';
 export type FeatureItem = {
   title: string;
   icon: string;
+  alt: string;
   description: string;
 };
 
 const FeatureItemComponent: React.FC<FeatureItem> = ({
   title,
   icon,
+  alt,
   description,
 }) => {
   return (
     <li className="feature-list-item">
       <div className="feature-item-image-wrapper">
-        <Image src={icon} alt="map" width={40} height={40} />
+        <Image src={icon} alt={alt} width={40} height={40} loading="lazy" />
       </div>
       <h2 className="feature-item-title">{title}</h2>
       <p className="feature-item-description">{description}</p>
@@ -38,6 +40,7 @@ const Features: React.FC<FeaturesProps> = ({ featureItems }) => {
                 key={index}
                 title={feature.title}
                 icon={feature.icon}
+                alt={feature.alt}
                 description={feature.description}
               />
             ))}
