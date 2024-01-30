@@ -16,7 +16,7 @@ const AboutUs = () => {
                 width={50}
                 height={50}
                 className="title-icon left-[5px]"
-                loading="lazy"
+                loading="eager"
               />
               <h1 className="about-title">
                 Your Trusted Source for Fresh Eggs and Pure Honey
