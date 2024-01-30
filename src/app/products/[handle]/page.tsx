@@ -44,6 +44,7 @@ const Product = () => {
               width={500}
               height={500}
               className="h-full w-full rounded-md object-cover object-center"
+              loading="eager"
             />
           </div>
           <div className="col-span-1">
