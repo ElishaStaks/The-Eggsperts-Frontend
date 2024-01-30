@@ -26,12 +26,12 @@ const AboutUs = () => {
             <div className="about-content-wrapper">
               <div className="about-image-wrapper">
                 <Image
-                  src="/assets/shop/stall_1.jpeg"
+                  src="/assets/shop/stall_1.webp"
                   alt="Responsive no image"
                   className="rounded-md object-cover"
                   width={2000}
                   height={2000}
-                  loading="lazy"
+                  loading="eager"
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
