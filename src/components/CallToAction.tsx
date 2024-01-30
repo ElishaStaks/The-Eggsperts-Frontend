@@ -6,7 +6,7 @@ import Button from './Button';
 
 const CallToAction = () => {
   return (
-    <section className="relative mx-auto">
+    <section className="relative mx-auto bg-[#f5f5f5]">
       <div className="max-container padding-container py-[8rem]">
         <div className="w-full max-w-[81.25rem]">
           <div className="flex flex-col items-center justify-center md:flex-row">

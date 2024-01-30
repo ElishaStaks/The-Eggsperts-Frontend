@@ -123,6 +123,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
             alt="left_arrow"
             width={24}
             height={24}
+            loading="lazy"
           />
         ) : (
           <Image
@@ -130,6 +131,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
             alt="right_arrow"
             width={24}
             height={24}
+            loading="lazy"
           />
         )}
       </button>

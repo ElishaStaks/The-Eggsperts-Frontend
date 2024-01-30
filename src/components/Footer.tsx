@@ -19,7 +19,7 @@ const FooterColumn = ({ title, children }: FooterColumnProps) => {
 
 const Footer = () => {
   return (
-    <footer className="flexCenter py-24">
+    <footer className="flexCenter bg-white py-24">
       <div className="padding-container max-container flex w-full flex-col gap-14">
         <div className="footer-wrapper">
           <Link href="/" className="logo-link mb-10">

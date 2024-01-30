@@ -30,7 +30,7 @@ const ProductList: React.FC<ProductListProps> = ({
   };
 
   return (
-    <div className="">
+    <div>
       <div className="product-list-available-text-wrapper">
         <div className="lg:hidden">
           <Image

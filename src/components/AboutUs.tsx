@@ -5,7 +5,7 @@ import Button from './Button';
 
 const AboutUs = () => {
   return (
-    <section className="relative mx-auto bg-[#e3deca]">
+    <section className="relative mx-auto bg-[#f5f5f5]">
       <div className="max-container padding-container py-[4rem] lg:py-[5.5rem]">
         <div className="w-full">
           <div className="relative z-10">
@@ -28,7 +28,7 @@ const AboutUs = () => {
                 <Image
                   src="/assets/shop/stall_1.jpeg"
                   alt="Responsive no image"
-                  className="object-cover"
+                  className="rounded-md object-cover"
                   width={2000}
                   height={2000}
                   loading="lazy"

@@ -18,7 +18,7 @@ const ProductItem = ({ title, image }: ProductItem) => {
             src={image}
             alt={title}
             fill
-            className="rounded-t-lg object-cover"
+            className="object-cover"
             sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
             loading="lazy"
           />
