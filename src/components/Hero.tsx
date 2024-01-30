@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="hero-section-wrapper">
       <div>
         <Image
-          src="/hero.jpg"
+          src="/hero.webp"
           alt="Big breakfast meal with 2 cooked farm fresh eggs from The"
           className="object-cover"
           fill
