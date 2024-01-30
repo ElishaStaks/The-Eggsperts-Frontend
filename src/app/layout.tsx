@@ -1,6 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import '@/styles/global.css';
 
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -35,7 +36,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
