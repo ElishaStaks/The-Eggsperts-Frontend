@@ -19,7 +19,7 @@ const ImageItem = ({ key, image }: ImageItem) => {
             fill
             className="object-cover"
             sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
-            loading="lazy"
+            loading="eager"
           />
         </div>
       </div>

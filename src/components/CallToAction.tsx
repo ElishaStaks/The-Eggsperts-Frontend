@@ -18,7 +18,7 @@ const CallToAction = () => {
                   className="rounded-full"
                   width={1000}
                   height={1000}
-                  loading="lazy"
+                  loading="eager"
                 />
               </Link>
               <div className="cta-content-wrapper">

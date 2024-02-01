@@ -20,7 +20,7 @@ const ProductItem = ({ title, image }: ProductItem) => {
             fill
             className="object-cover"
             sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
-            loading="lazy"
+            loading="eager"
           />
         </div>
         <div className="product-item-title-wrapper">
@@ -43,7 +43,7 @@ const ProductRange = () => {
               width={50}
               height={50}
               className="title-icon left-[5px]"
-              loading="lazy"
+              loading="eager"
             />
             <h2 className="bold-40 lg:bold-64">Our Product Range</h2>
           </div>

@@ -33,7 +33,7 @@ const ProductCard: React.FC<ProductProps> = ({
             className="product-card-image"
             width={2000}
             height={2000}
-            loading="lazy"
+            loading="eager"
           />
         </div>
         <div className="product-card-content-wrapper">

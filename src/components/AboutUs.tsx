@@ -44,7 +44,7 @@ const AboutUs = () => {
                         width={50}
                         height={50}
                         className="absolute left-[-5px] top-[-50px] w-10 lg:w-[50px]"
-                        loading="lazy"
+                        loading="eager"
                       />
                     </div>
                     <h3 className="bold-20 lg:bold-32 mb-[0.75rem] capitalize">

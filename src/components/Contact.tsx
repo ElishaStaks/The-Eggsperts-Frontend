@@ -13,6 +13,9 @@ import Button from './Button';
 import GoogleMaps from './Map';
 
 const Contact = () => {
+  // Check if the current screen size is considered "desktop"
+  const isDesktop = typeof window !== 'undefined' && window.innerWidth >= 1024;
+
   const initialFormData = {
     name: '',
     email: '',
@@ -205,9 +208,11 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="hidden shadow-xl lg:block lg:w-full">
-          <GoogleMaps lat={-37.8064932} lng={144.9571063} />
-        </div>
+        {isDesktop && (
+          <div className="shadow-xl lg:block lg:w-full">
+            <GoogleMaps lat={-37.8064932} lng={144.9571063} />
+          </div>
+        )}
       </div>
     </section>
   );

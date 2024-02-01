@@ -16,7 +16,7 @@ const FeatureItemComponent: React.FC<FeatureItem> = ({
   return (
     <li className="feature-list-item">
       <div className="feature-item-image-wrapper">
-        <Image src={icon} alt={alt} width={40} height={40} loading="lazy" />
+        <Image src={icon} alt={alt} width={40} height={40} loading="eager" />
       </div>
       <h2 className="feature-item-title">{title}</h2>
       <p className="feature-item-description">{description}</p>
