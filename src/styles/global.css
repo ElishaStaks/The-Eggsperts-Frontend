@@ -382,7 +382,7 @@ body {
   }
 
   .product-card-sub-wrapper {
-    @apply flex h-full flex-col overflow-hidden rounded-lg border-2 border-gray-500 lg:hover:border-gray-600 bg-white shadow-lg hover:shadow-xl
+    @apply flex h-full flex-col overflow-hidden rounded-md border-2 border-gray-500 lg:hover:border-gray-600 bg-white shadow-lg hover:shadow-xl
   }
 
   .product-card-image-wrapper {
@@ -390,7 +390,7 @@ body {
   }
 
   .product-card-image {
-    @apply h-32 sm:h-48 w-full rounded-lg object-cover
+    @apply h-32 sm:h-48 w-full rounded-md object-cover
   }
 
   .product-card-content-wrapper {

@@ -28,9 +28,9 @@ const AboutUs = () => {
                 <Image
                   src="/assets/shop/stall_1.webp"
                   alt="Responsive no image"
-                  className="rounded-md object-cover"
-                  width={2000}
-                  height={2000}
+                  className="rounded-sm object-cover"
+                  width={500}
+                  height={500}
                   loading="eager"
                 />
               </div>
