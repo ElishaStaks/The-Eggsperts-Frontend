@@ -35,10 +35,10 @@ const Product = () => {
 
   return (
     <section className="relative mx-auto bg-gray-100">
-      <div className="max-container padding-container py-4 lg:py-[5.5rem]">
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 lg:gap-12 2xl:gap-16">
+      <div className="max-container padding-container py-4 md:py-[2.5rem] lg:py-[3.5rem]">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-2 lg:gap-12 2xl:gap-16">
           <div className="col-span-1">
-            <h2 className="mb-4 text-2xl font-bold md:text-3xl lg:text-4xl">
+            <h2 className="mb-4 text-2xl font-bold md:hidden md:text-3xl lg:hidden lg:text-4xl">
               {product.name}
             </h2>
             <Image
@@ -52,8 +52,10 @@ const Product = () => {
             />
           </div>
           <div className="col-span-1">
+            <h2 className="mb-4 hidden text-2xl font-bold md:block md:text-3xl lg:block lg:text-4xl">
+              {product.name}
+            </h2>
             <p className="mb-4 text-gray-600">{product.description}</p>
-
             <h3 className="mb-2 text-lg font-semibold md:text-xl lg:text-2xl">
               Size: {selectedVariant?.name}
             </h3>
