@@ -42,8 +42,8 @@ const Mission = () => {
               <Image
                 src="/eggs_title_icon.png"
                 alt="Basket of farm fresh eggs"
-                width={32}
-                height={32}
+                width={50}
+                height={50}
                 className="title-icon left-[5px]"
               />
               <h2 className="bold-40 lg:bold-64 mb-[1rem]">Our Misson</h2>

@@ -19,8 +19,8 @@ const Hero = () => {
         <Image
           src="/eggs_title_icon.png"
           alt="Basket of farm fresh eggs"
-          width={32}
-          height={32}
+          width={50}
+          height={50}
           className="absolute top-[-30px] w-10 lg:w-[50px]"
           loading="eager"
         />

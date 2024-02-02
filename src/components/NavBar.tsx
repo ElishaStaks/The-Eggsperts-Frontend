@@ -22,11 +22,11 @@ const Navbar = () => {
       <div className="max-container flexBetween padding-container">
         <Link href="/" className="logo-link">
           <Image
-            src="/logo.jpg"
+            src="assets/svgs/the-eggsperts-logo.svg"
             alt="The eggsperts chicken and bee logo"
-            className="rounded-full"
+            className="p-1 py-5"
             width={200}
-            height={200}
+            height={80}
             loading="eager"
           />
         </Link>

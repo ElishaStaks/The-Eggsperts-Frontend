@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -24,7 +25,13 @@ const Footer = () => {
         <div className="footer-wrapper">
           <Link href="/" className="logo-link mb-10">
             {/* <Image src="hilink-logo.svg" alt="logo" width={74} height={29} /> */}
-            The Eggsperts
+            <Image
+              src="assets/svgs/the-eggsperts-logo.svg"
+              alt="The eggsperts chicken and bee logo"
+              width={200}
+              height={80}
+              loading="eager"
+            />
           </Link>
           <div className="footer-links-wrapper">
             {FOOTER_LINKS.map((columns) => (
