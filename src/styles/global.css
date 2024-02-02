@@ -20,42 +20,6 @@ body {
 }
 
 @layer utilities {
-  /* #region  /**=========== Fade In =========== */
-  [data-fade] {
-    @apply translate-y-10 opacity-0 transition duration-300 ease-out motion-reduce:translate-y-0 motion-reduce:opacity-100;
-  }
-  .fade-in-start [data-fade] {
-    @apply translate-y-0 opacity-100;
-  }
-  .fade-in-start [data-fade='1'] {
-    transition-delay: 100ms;
-  }
-  .fade-in-start [data-fade='2'] {
-    transition-delay: 200ms;
-  }
-  .fade-in-start [data-fade='3'] {
-    transition-delay: 300ms;
-  }
-  .fade-in-start [data-fade='4'] {
-    transition-delay: 400ms;
-  }
-  .fade-in-start [data-fade='5'] {
-    transition-delay: 500ms;
-  }
-  .fade-in-start [data-fade='6'] {
-    transition-delay: 600ms;
-  }
-  .fade-in-start [data-fade='7'] {
-    transition-delay: 700ms;
-  }
-  .fade-in-start [data-fade='8'] {
-    transition-delay: 800ms;
-  }
-  .fade-in-start [data-fade='9'] {
-    transition-delay: 900ms;
-  }
-  /* #endregion  /**======== Fade In =========== */
-
   .btn_white {
     @apply border-white bg-white px-8 py-3 text-green-500
   }
@@ -195,7 +159,7 @@ body {
   }
 
   .hero-description {
-    @apply regular-16 mt-6 text-white xl:max-w-[520px]
+    @apply regular-16 mt-6 leading-7 text-white xl:max-w-[520px]
   }
 
   .hero-button-wrapper {
@@ -260,7 +224,7 @@ body {
 
   /* PRODUCT RANGE STYLES */
   .product-item-wrapper {
-    @apply overflow-hidden rounded-md bg-white shadow-lg transform-gpu hover:scale-105 hover:shadow-xl
+    @apply overflow-hidden rounded-md bg-white shadow-lg lg:transform-gpu lg:hover:scale-105 lg:hover:shadow-xl
   }
 
   .product-item-title-wrapper {
@@ -314,7 +278,7 @@ body {
   }
 
   .feature-item-description {
-    @apply regular-16 mt-5 text-[#878069] lg:mt-[30] lg:bg-none
+    @apply regular-16 mt-5 leading-7 lg:mt-[30] lg:bg-none
   }
 
   /* CONTACT STYLES */
@@ -335,7 +299,7 @@ body {
   }
 
   .contact-form-description {
-    @apply regular-16 text-[#878069] bg-none mt-3 lg:max-w-[35rem]
+    @apply regular-16 leading-7 bg-none mt-3 lg:max-w-[35rem]
   }
 
   .contact-form-input {
@@ -369,7 +333,7 @@ body {
   }
 
   .about-content-wrapper {
-    @apply relative mt-[2.5rem] grid grid-cols-1 gap-20 md:mt-[5.5rem] lg:mt-[7.5rem] lg:grid-cols-2
+    @apply relative mt-[2.5rem] grid grid-cols-1 gap-12 md:gap-20 md:mt-[5.5rem] lg:mt-[7.5rem] lg:grid-cols-2
   }
 
   .about-image-wrapper {

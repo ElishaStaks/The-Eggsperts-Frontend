@@ -27,7 +27,7 @@ const AboutUs = () => {
               <div className="about-image-wrapper">
                 <Image
                   src="/assets/shop/stall_1.webp"
-                  alt="Responsive no image"
+                  alt="The Eggsperts shop"
                   className="rounded-sm object-cover"
                   width={500}
                   height={500}
@@ -37,21 +37,11 @@ const AboutUs = () => {
               <div className="flex flex-col items-center justify-center">
                 <div className="max-w-none">
                   <div className="">
-                    <div className="relative">
-                      <Image
-                        src="/eggs_title_icon.png"
-                        alt="Basket of farm fresh eggs"
-                        width={50}
-                        height={50}
-                        className="absolute left-[-5px] top-[-50px] w-10 lg:w-[50px]"
-                        loading="eager"
-                      />
-                    </div>
                     <h3 className="bold-20 lg:bold-32 mb-[0.75rem] capitalize">
-                      Who are we?
+                      The Eggsperts
                     </h3>
                   </div>
-                  <p className="regular-16 mb-[2.25rem] text-[#878069]">
+                  <p className="regular-16 mb-[2.25rem] leading-7">
                     Your go-to destination for high-quality eggs and honey in
                     Melbourne. Located at Victoria Market on Elizabeth Street,
                     we are proud to offer a wide range of fresh and delicious

@@ -26,7 +26,7 @@ const MissionItem = ({ title, icon, alt, description }: MissionItem) => {
       </div>
       <div className="mt-[1.5rem] lg:ml-[1.5rem] lg:mt-0">
         <h3 className="bold-20 lg:bold-32 mb-[0.75rem] capitalize">{title}:</h3>
-        <p className="regular-16 text-[#878069]">{description}</p>
+        <p className="regular-16 leading-7">{description}</p>
       </div>
     </div>
   );
@@ -41,13 +41,13 @@ const Mission = () => {
             <div className="sticky z-10 flex max-w-[440px] flex-col items-start">
               <Image
                 src="/eggs_title_icon.png"
-                alt="eggs"
-                width={50}
-                height={50}
+                alt="Basket of farm fresh eggs"
+                width={32}
+                height={32}
                 className="title-icon left-[5px]"
               />
               <h2 className="bold-40 lg:bold-64 mb-[1rem]">Our Misson</h2>
-              <p className="max-w-[35rem] text-[#878069]">
+              <p className="max-w-[35rem] leading-7">
                 {' '}
                 At The Eggsperts, our mission is clear — to provide our
                 customers with the finest quality eggs and honey, sourced from

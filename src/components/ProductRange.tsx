@@ -40,8 +40,8 @@ const ProductRange = () => {
             <Image
               src="/eggs_title_icon.png"
               alt="Basket of farm fresh eggs"
-              width={50}
-              height={50}
+              width={32}
+              height={32}
               className="title-icon left-[5px]"
               loading="eager"
             />

@@ -55,7 +55,9 @@ const Product = () => {
             <h2 className="mb-4 hidden text-2xl font-bold md:block md:text-3xl lg:block lg:text-4xl">
               {product.name}
             </h2>
-            <p className="mb-4 text-gray-600">{product.description}</p>
+            <p className="mb-4 leading-7 text-gray-600">
+              {product.description}
+            </p>
             <h3 className="mb-2 text-lg font-semibold md:text-xl lg:text-2xl">
               Size: {selectedVariant?.name}
             </h3>
