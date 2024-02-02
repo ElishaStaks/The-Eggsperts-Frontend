@@ -59,12 +59,12 @@ const Product = () => {
             <h3 className="mb-2 text-lg font-semibold md:text-xl lg:text-2xl">
               Size: {selectedVariant?.name}
             </h3>
-            <div className="mb-6 space-x-2">
+            <div className="mb-6">
               {product.variants.map((variant: ProductVariantProps) => (
                 <div
                   key={variant.name}
                   onClick={() => handleVariantClick(variant)}
-                  className="inline-block cursor-pointer rounded-full border-2 border-gray-600 p-2"
+                  className="mb-2 mr-2 inline-block cursor-pointer rounded-full border-2 border-gray-600 p-2"
                 >
                   <span
                     className={`${
