@@ -35,16 +35,17 @@ const Product = () => {
 
   return (
     <section className="relative mx-auto bg-gray-100">
-      <div className="max-container padding-container py-16 lg:py-[5.5rem]">
+      <div className="max-container padding-container py-12 lg:py-[5.5rem]">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-2 lg:gap-12 2xl:gap-16">
           <div className="col-span-1">
             <Image
               src={product.image}
               alt={product.handle}
-              width={500}
-              height={500}
-              className="h-full w-full rounded-md object-cover object-center"
+              width={200}
+              height={200}
+              className="w-full rounded-md object-cover object-center"
               loading="eager"
+              sizes="(max-width: 640px) 40vw, (max-width: 768px) 60vw, 1200px"
             />
           </div>
           <div className="col-span-1">

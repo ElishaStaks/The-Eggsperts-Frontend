@@ -44,7 +44,7 @@ const Products = () => {
             )}
             {/* Display main filter component on lg screens */}
             <div className="flex">
-              <div className="hidden lg:flex" style={{ minWidth: '300px' }}>
+              <div className="hidden min-w-[300px] lg:flex">
                 <ProductFilter onFilterChange={handleFilterChange} />
               </div>
               <ProductList

@@ -3,19 +3,19 @@ import Image from 'next/image';
 import { IMAGES_GALLERY } from '../constants';
 
 type ImageItem = {
-  key: string;
+  imageKey: string;
   image: string;
 };
 
 // eslint-disable-next-line @typescript-eslint/no-redeclare
-const ImageItem = ({ key, image }: ImageItem) => {
+const ImageItem = ({ imageKey, image }: ImageItem) => {
   return (
     <li className="mx-2 my-4">
       <div className="image-item-wrapper">
         <div className="relative h-48">
           <Image
             src={image}
-            alt={`Farm fresh eggs and sweet honey-${key}`}
+            alt={`Farm fresh eggs and sweet honey-${imageKey}`}
             fill
             className="object-cover"
             sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
@@ -34,7 +34,11 @@ const ImageGallery = () => {
         <div className="z-20 flex w-full flex-col lg:w-[100%]">
           <ul className="image-gallery-items-wrapper">
             {IMAGES_GALLERY.map((item) => (
-              <ImageItem key={item.key} image={item.image} />
+              <ImageItem
+                key={item.key}
+                imageKey={item.key}
+                image={item.image}
+              />
             ))}
           </ul>
         </div>

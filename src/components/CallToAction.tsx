@@ -16,8 +16,8 @@ const CallToAction = () => {
                   src="/chicken.webp"
                   alt="Cute artistic chicken with glasses holding a magnifying glass"
                   className="rounded-full"
-                  width={1000}
-                  height={1000}
+                  width={500}
+                  height={500}
                   loading="eager"
                 />
               </Link>
