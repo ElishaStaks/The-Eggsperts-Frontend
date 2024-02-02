@@ -22,7 +22,7 @@ const Products = () => {
   };
 
   return (
-    <section className="product-section-wrapper bg-[#f5f5f5] pt-[4rem]">
+    <section className="product-section-wrapper bg-[#f5f5f5] pt-[2rem] lg:pt-[4rem]">
       <div className="product-wrapper">
         <div className="z-20 flex w-full flex-col lg:w-[100%]">
           <div className="relative">

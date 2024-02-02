@@ -35,28 +35,29 @@ const Product = () => {
 
   return (
     <section className="relative mx-auto bg-gray-100">
-      <div className="max-container padding-container py-12 lg:py-[5.5rem]">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-2 lg:gap-12 2xl:gap-16">
+      <div className="max-container padding-container py-4 lg:py-[5.5rem]">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 lg:gap-12 2xl:gap-16">
           <div className="col-span-1">
+            <h2 className="mb-4 text-2xl font-bold md:text-3xl lg:text-4xl">
+              {product.name}
+            </h2>
             <Image
               src={product.image}
               alt={product.handle}
               width={200}
               height={200}
-              className="w-full rounded-md object-cover object-center"
+              className="w-full rounded-sm object-cover object-center"
               loading="eager"
               sizes="(max-width: 640px) 40vw, (max-width: 768px) 60vw, 1200px"
             />
           </div>
           <div className="col-span-1">
-            <h2 className="mb-4 text-2xl font-bold md:text-3xl lg:text-4xl">
-              {product.name}
-            </h2>
             <p className="mb-4 text-gray-600">{product.description}</p>
+
             <h3 className="mb-2 text-lg font-semibold md:text-xl lg:text-2xl">
               Size: {selectedVariant?.name}
             </h3>
-            <div className="mb-4 space-x-2">
+            <div className="mb-6 space-x-2">
               {product.variants.map((variant: ProductVariantProps) => (
                 <div
                   key={variant.name}

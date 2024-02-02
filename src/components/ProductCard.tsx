@@ -38,11 +38,7 @@ const ProductCard: React.FC<ProductProps> = ({
           />
         </div>
         <div className="product-card-content-wrapper">
-          <h3
-            className={`product-card-name ${type === 'Eggs' && 'text-center'}`}
-          >
-            {name}
-          </h3>
+          <h3 className="product-card-name">{name}</h3>
           {type === 'Honey' && (
             <p className="product-card-price">{getFirstVariantPrice()}</p>
           )}
