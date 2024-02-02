@@ -31,7 +31,6 @@ const Navbar = () => {
           />
         </Link>
 
-        {/* Display the menu icon on screens smaller than lg */}
         <Image
           className="nav-menu-icon"
           src="/assets/svgs/menu.svg"
