@@ -6,13 +6,22 @@
 
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
+
+import { useFilterContext } from '@/contexts/FilterContext';
 
 import { FILTER_TYPES } from '../constants';
 import type { FilterProps } from '../types';
 
 const ProductFilter: React.FC<FilterProps> = ({ onFilterChange }) => {
-  const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
+  const {
+    selectedFilters: contextSelectedFilters,
+    updateFilters: updateContextFilters,
+  } = useFilterContext();
+
+  const [selectedFilters, setSelectedFilters] = useState<string[]>(
+    contextSelectedFilters,
+  );
   const [isOpen, setIsOpen] = useState<{ [key: string]: boolean }>({});
   const [maxHeight, setMaxHeight] = useState<{ [key: string]: string }>({});
   const contentRefs: { [key: string]: React.RefObject<HTMLDivElement> } = {};
@@ -57,21 +66,25 @@ const ProductFilter: React.FC<FilterProps> = ({ onFilterChange }) => {
     });
   }, [isOpen]);
 
-  const handleToggle = (filterName: string) => {
+  const handleToggle = useCallback((filterName: string) => {
     setIsOpen((prev) => ({
       ...prev,
       [filterName]: !prev[filterName],
     }));
-  };
+  }, []);
 
-  const handleFilterToggle = (filterValue: string) => {
-    const updatedFilters = selectedFilters.includes(filterValue)
-      ? selectedFilters.filter((filter) => filter !== filterValue)
-      : [...selectedFilters, filterValue];
+  const handleFilterToggle = useCallback(
+    (filterValue: string) => {
+      const updatedFilters = selectedFilters.includes(filterValue)
+        ? selectedFilters.filter((filter) => filter !== filterValue)
+        : [...selectedFilters, filterValue];
 
-    setSelectedFilters(updatedFilters);
-    onFilterChange(updatedFilters);
-  };
+      setSelectedFilters(updatedFilters);
+      updateContextFilters(updatedFilters);
+      onFilterChange(updatedFilters);
+    },
+    [selectedFilters, updateContextFilters],
+  );
 
   return (
     <div className="product-filter-wrapper">

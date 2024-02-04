@@ -1,5 +1,12 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+
+import { useFilterContext } from '@/contexts/FilterContext';
 
 import { PRODUCT_RANGE } from '../constants';
 
@@ -10,9 +17,16 @@ type ProductItem = {
 
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 const ProductItem = ({ title, image }: ProductItem) => {
+  const { updateFilters } = useFilterContext();
+
   return (
     <li className="mx-2 my-4">
-      <div className="product-item-wrapper">
+      <div
+        className="product-item-wrapper"
+        onClick={() => {
+          updateFilters([title]);
+        }}
+      >
         <div className="relative h-48">
           <Image
             src={image}

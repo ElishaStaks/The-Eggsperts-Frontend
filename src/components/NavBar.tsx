@@ -4,16 +4,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
+import { useFilterContext } from '@/contexts/FilterContext';
+
 import { NAV_LINKS } from '../constants';
 import { useBodyOverflow } from '../hooks/BodyOverflow';
 import Button from './Button';
 
 const Navbar = () => {
+  const { resetFilters } = useFilterContext();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useBodyOverflow(isMenuOpen);
 
   const handleMenuClick = () => {
+    resetFilters();
     setIsMenuOpen(!isMenuOpen);
   };
 
@@ -28,6 +32,7 @@ const Navbar = () => {
             width={200}
             height={80}
             loading="eager"
+            onClick={resetFilters}
           />
         </Link>
 
@@ -44,7 +49,14 @@ const Navbar = () => {
         {/* On larger screens (lg and xl), display the regular navigation links and shop now button */}
         <ul className="hidden h-full gap-12 lg:flex">
           {NAV_LINKS.map((link) => (
-            <Link href={link.href} key={link.key} className="nav-link">
+            <Link
+              href={link.href}
+              key={link.key}
+              className="nav-link"
+              onClick={() => {
+                resetFilters();
+              }}
+            >
               {link.label}
             </Link>
           ))}

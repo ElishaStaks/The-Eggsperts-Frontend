@@ -5,6 +5,8 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from 'next';
 
+import { FilterProvider } from '@/contexts/FilterContext';
+
 export const metadata: Metadata = {
   icons: [
     {
@@ -38,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body suppressHydrationWarning>
-        {children}
+        <FilterProvider>{children}</FilterProvider>
         <Analytics />
         <SpeedInsights />
       </body>
