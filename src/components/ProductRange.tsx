@@ -21,26 +21,31 @@ const ProductItem = ({ title, image }: ProductItem) => {
 
   return (
     <li className="mx-2 my-4">
-      <div
-        className="product-item-wrapper"
-        onClick={() => {
-          updateFilters([title]);
-        }}
+      <Link
+        href={`/products?filter=${encodeURIComponent(title)}`}
+        className="w-button"
       >
-        <div className="relative h-48">
-          <Image
-            src={image}
-            alt={title}
-            fill
-            className="object-cover"
-            sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
-            loading="eager"
-          />
+        <div
+          className="product-item-wrapper"
+          onClick={() => {
+            updateFilters([title]);
+          }}
+        >
+          <div className="relative h-48">
+            <Image
+              src={image}
+              alt={title}
+              fill
+              className="object-cover"
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
+              loading="eager"
+            />
+          </div>
+          <div className="product-item-title-wrapper">
+            <h2 className="product-item-title">{title}</h2>
+          </div>
         </div>
-        <div className="product-item-title-wrapper">
-          <h2 className="product-item-title">{title}</h2>
-        </div>
-      </div>
+      </Link>
     </li>
   );
 };
@@ -63,9 +68,11 @@ const ProductRange = () => {
           </div>
           <ul className="product-range-items-wrapper">
             {PRODUCT_RANGE.map((product) => (
-              <Link key={product.title} href="/products?" className="w-button">
-                <ProductItem title={product.title} image={product.image} />
-              </Link>
+              <ProductItem
+                key={product.title}
+                title={product.title}
+                image={product.image}
+              />
             ))}
           </ul>
         </div>

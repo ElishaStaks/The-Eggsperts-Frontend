@@ -7,9 +7,8 @@ import { FEATURES } from '@/constants';
 
 export async function generateMetadata() {
   return {
-    title: 'The Eggsperts',
-    description:
-      "Discover the freshest eggs and purest honey at our Victoria Market store on Queen St. Indulge in nature's goodness with our premium selection. Visit us for farm-fresh delights, quality guaranteed. Your source for wholesome goodness in the heart of Victoria Market. Taste the difference today!",
+    title: 'Home - The Eggsperts',
+    description: 'The Eggsperts landing page',
   };
 }
 
