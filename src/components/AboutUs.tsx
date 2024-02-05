@@ -26,11 +26,11 @@ const AboutUs = () => {
             <div className="about-content-wrapper">
               <div className="about-image-wrapper">
                 <Image
-                  src="/assets/shop/stall_1.webp"
+                  src="/stall_1.webp"
                   alt="The Eggsperts shop"
                   className="rounded-sm object-cover"
-                  width={500}
-                  height={500}
+                  width={700}
+                  height={450}
                   loading="eager"
                 />
               </div>

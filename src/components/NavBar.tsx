@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="max-container flexBetween padding-container">
         <Link href="/" className="logo-link">
           <Image
-            src="assets/svgs/the-eggsperts-logo.svg"
+            src="/svgs/the-eggsperts-logo.svg"
             alt="The eggsperts chicken and bee logo"
             className="p-1 py-5"
             width={200}
@@ -38,7 +38,7 @@ const Navbar = () => {
 
         <Image
           className="nav-menu-icon"
-          src="/assets/svgs/menu.svg"
+          src="/svgs/menu.svg"
           alt="The eggsperts hamburger icon"
           width={32}
           height={32}

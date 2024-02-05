@@ -13,11 +13,11 @@ export const NAV_LINKS = [
 export const TEAM = [
   {
     name: 'Daniel Perogannis',
-    image: '/assets/products/empty.webp',
+    image: '/products/empty.webp',
   },
   {
     name: 'Sophie Perogannis',
-    image: '/assets/products/empty.webp',
+    image: '/products/empty.webp',
   },
 ];
 
@@ -25,21 +25,21 @@ export const TEAM = [
 export const MISSION_VALUES = [
   {
     title: 'Commitment to Quality',
-    icon: '/assets/svgs/quality.svg',
+    icon: '/svgs/quality.svg',
     alt: 'The eggsperts and their commitment to quality badge icon',
     description:
       'Quality is at the heart of everything we do. From the selection of our suppliers to the careful handling of our products, we are dedicated to maintaining the highest standards throughout every step of the process. We believe that our customers deserve nothing less than the best.',
   },
   {
     title: 'Transparency and Integrity',
-    icon: '/assets/svgs/swords.svg',
+    icon: '/svgs/swords.svg',
     alt: 'The eggsperts and their transparency and integrity badge icon',
     description:
       "Transparency is a core value at The Eggsperts. We believe in providing our customers with complete information about our products, sourcing practices, and business operations. It's this commitment to openness and integrity that sets us apart and builds trust with our valued customers.",
   },
   {
     title: 'Customer Satisfaction',
-    icon: '/assets/svgs/happy.svg',
+    icon: '/svgs/happy.svg',
     alt: 'The eggsperts and their priority for customer satisfaction',
     description:
       'Our customers are at the center of everything we do. We value your feedback and continuously work towards enhancing your experience with The Eggsperts. Your satisfaction is our priority, and we are committed to ensuring that every interaction with us leaves you delighted.',
@@ -50,21 +50,21 @@ export const MISSION_VALUES = [
 export const FEATURES: FeatureItem[] = [
   {
     title: 'Locally sourced ingredients',
-    icon: '/assets/svgs/farm.svg',
+    icon: '/svgs/farm.svg',
     alt: 'Locally sourced ingredients barn yard icon',
     description:
       'From the farm to your table, enjoy the goodness of locally procured, premium-quality ingredients.',
   },
   {
     title: 'Farm fresh eggs',
-    icon: '/assets/svgs/eggs.svg',
+    icon: '/svgs/eggs.svg',
     alt: 'Farm fresh eggs icon',
     description:
       'Indulge in the richness of eggs laid with care, ensuring each bite is a wholesome delight.',
   },
   {
     title: 'Delicious and nutrious',
-    icon: '/assets/svgs/honey_jar.svg',
+    icon: '/svgs/honey_jar.svg',
     alt: 'Sweet honey in a tub icon',
     description:
       'Explore our range of delicious honey, packed with natural sweetness and nutritional benefits.',
@@ -94,12 +94,12 @@ export const IMAGES_GALLERY = [
 export const PRODUCT_RANGE = [
   {
     title: 'Eggs',
-    image: '/assets/shop/stall_3.webp',
+    image: '/stall_3.webp',
     selectFilter: 'Eggs',
   },
   {
     title: 'Honey',
-    image: '/assets/shop/stall_2.webp',
+    image: '/stall_2.webp',
     selectFilter: 'Honey',
   },
 ];
@@ -108,7 +108,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: '600-caged-trays',
     name: '600 Caged Trays',
-    image: '/assets/products/600_cage_trays.webp',
+    image: '/products/600_cage_trays.webp',
     description: '180 large fresh caged eggs in filler trays.',
     type: 'Eggs',
     variants: [
@@ -121,7 +121,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: '700-caged-trays',
     name: '700 Caged Trays',
-    image: '/assets/products/700_cage_trays.webp',
+    image: '/products/700_cage_trays.webp',
     description: '180 extra large fresh caged eggs in filler trays.',
     type: 'Eggs',
     variants: [
@@ -134,7 +134,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: '70-plus-caged-trays',
     name: '70+ Caged Trays',
-    image: '/assets/products/empty.webp',
+    image: '/products/empty.webp',
     description:
       '120 king size fresh caged eggs in filler trays. Stocking density for these eggs is 1500 hens per hectare.',
     type: 'Eggs',
@@ -148,7 +148,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: '800-caged-trays',
     name: '800 Caged Trays',
-    image: '/assets/products/800_cage_trays.webp',
+    image: '/products/800_cage_trays.webp',
     description: '180 jumbo fresh caged eggs in filler trays.',
     type: 'Eggs',
     variants: [
@@ -161,7 +161,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: '700-free-range-trays',
     name: '700 Free Range Trays',
-    image: '/assets/products/fr_trays.webp',
+    image: '/products/fr_trays.webp',
     description:
       '180 extra large fresh free range eggs in filler trays. Stocking density for these eggs is 1500 hens per hectare.',
     type: 'Eggs',
@@ -175,7 +175,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: '75-plus-free-range-trays',
     name: '75+ Free Range Trays',
-    image: '/assets/products/75+_trays.webp',
+    image: '/products/75+_trays.webp',
     description:
       '120 king size fresh free range eggs in filler trays. Stocking density for these eggs is 1500 hens per hectare.',
     type: 'Eggs',
@@ -189,7 +189,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: '700-caged-dozens',
     name: '700 Caged Dozens',
-    image: '/assets/products/700_cage_doz.webp',
+    image: '/products/700_cage_doz.webp',
     description: '180 extra large fresh caged eggs. 15 dozens per box.',
     type: 'Eggs',
     variants: [
@@ -202,7 +202,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: '700-golden-yolk-trays',
     name: '700 Golden Yolk Trays',
-    image: '/assets/products/700_gy_trays.webp',
+    image: '/products/700_gy_trays.webp',
     description: '180 extra large fresh free range eggs in filler trays.',
     type: 'Eggs',
     variants: [
@@ -215,7 +215,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: '800-caged-dozens',
     name: '800 Caged Dozens',
-    image: '/assets/products/800_cage_doz.webp',
+    image: '/products/800_cage_doz.webp',
     description: '180 jumbo fresh caged eggs. 15 dozens per box.',
     type: 'Eggs',
     variants: [
@@ -228,7 +228,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: '600-organic-trays',
     name: '600 Organic Trays',
-    image: '/assets/products/600_organic_trays.webp',
+    image: '/products/600_organic_trays.webp',
     description: '180 large fresh free range organic eggs.',
     type: 'Eggs',
     variants: [
@@ -241,7 +241,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: '600-golden-yolk-dozens',
     name: '600 Golden Yolk Dozens',
-    image: '/assets/products/600_golden_yolk.webp',
+    image: '/products/600_golden_yolk.webp',
     description:
       '180 large fresh free range organic eggs. 15 dozens per box. Stocking density for these eggs is 1000 hens per hectare.',
     type: 'Eggs',
@@ -255,7 +255,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: '700-golden-yolk-dozens',
     name: '700 Golden Yolk Dozens',
-    image: '/assets/products/700_golden_yolk.webp',
+    image: '/products/700_golden_yolk.webp',
     description:
       '180 extra large fresh free range eggs. 15 dozens per box. Stocking density for these eggs is 1000 hens per hectare.',
     type: 'Eggs',
@@ -269,7 +269,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: '850-free-range',
     name: '850 Free Range',
-    image: '/assets/products/850.webp',
+    image: '/products/850.webp',
     description:
       '144 king size fresh free range eggs. 12 dozens per box. Stocking density for these eggs is 1500 hens per hectare.',
     type: 'Eggs',
@@ -283,7 +283,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'henzen',
     name: 'Henzen',
-    image: '/assets/products/henzen.webp',
+    image: '/products/henzen.webp',
     description:
       '180 jumbo fresh free range organic eggs. 15 dozens per box. Stocking density for these eggs is 50 hens per hectare.',
     type: 'Eggs',
@@ -297,7 +297,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'joannes',
     name: "Joanne's",
-    image: '/assets/products/joannes.webp',
+    image: '/products/joannes.webp',
     description:
       '180 jumbo fresh grain fed, barn laid organic eggs. 15 dozens per box.',
     type: 'Eggs',
@@ -311,7 +311,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'cracking-eggs',
     name: 'Cracking Eggs',
-    image: '/assets/products/cracking.webp',
+    image: '/products/cracking.webp',
     description:
       '180 jumbo fresh free range eggs. 15 dozens per box. Stocking density for these eggs is 25 hens per hectare and are pastured raised.',
     type: 'Eggs',
@@ -325,7 +325,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'earth-eggs',
     name: 'Earth Eggs',
-    image: '/assets/products/earth.webp',
+    image: '/products/earth.webp',
     description:
       '180 extra large fresh free range eggs. 15 dozens per box. Stocking density for these eggs is 145 hens per hectare. These eggs are pastured raised, soy free and hormone free eggs.',
     type: 'Eggs',
@@ -339,7 +339,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'honest-eggs',
     name: 'Honest Eggs',
-    image: '/assets/products/honest.webp',
+    image: '/products/honest.webp',
     description:
       '180 jumbo fresh free range eggs. 15 dozens per box. Stocking density for these eggs is less than 30 hens per hectare and are pastured raised.',
     type: 'Eggs',
@@ -353,7 +353,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'kiss-n-run',
     name: 'Kiss n Run',
-    image: '/assets/products/kiss_n_run.webp',
+    image: '/products/kiss_n_run.webp',
     description:
       '180 jumbo fresh free range eggs. 15 dozens per box. Stocking density for these eggs is 30 hens per hectare and are pastured raised.',
     type: 'Eggs',
@@ -367,7 +367,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'chook-at-the-rooke',
     name: 'Chook At The Rooke',
-    image: '/assets/products/chooks_at_the_rooks.webp',
+    image: '/products/chooks_at_the_rooks.webp',
     description:
       '180 jumbo fresh free range eggs. 15 dozens per box. Stocking density for these eggs is 94 hens per hectare and are pastured raised.',
     type: 'Eggs',
@@ -381,7 +381,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'milawa',
     name: 'Milawa',
-    image: '/assets/products/800_milawa_doz.webp',
+    image: '/products/800_milawa_doz.webp',
     description:
       '180 jumbo fresh organic free range eggs. 15 dozens per box. These eggs are pastured raised.',
     type: 'Eggs',
@@ -395,7 +395,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'smoked-eggs',
     name: 'Smoked Eggs',
-    image: '/assets/products/smoked_eggs.webp',
+    image: '/products/smoked_eggs.webp',
     description:
       '6 fresh free range smoked eggs. Half dozen pack. Stocking density for these eggs is 10,000 hens per hectare. Eggs have been smoked in a smoker.',
     type: 'Eggs',
@@ -409,7 +409,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'quail-eggs',
     name: 'Quail Eggs',
-    image: '/assets/products/empty.webp',
+    image: '/products/empty.webp',
     description:
       '150 fresh free range quail eggs. 15 per punnet. Minimum of 10 punnets.',
     type: 'Eggs',
@@ -423,7 +423,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'rl-stevens-leatherwood',
     name: 'R.L Stevens Leatherwood',
-    image: '/assets/products/empty.webp',
+    image: '/products/empty.webp',
     description: '',
     type: 'Honey',
     variants: [
@@ -456,7 +456,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'ambrosia-organic',
     name: 'Ambrosia Organic',
-    image: '/assets/products/empty.webp',
+    image: '/products/empty.webp',
     description: '',
     type: 'Honey',
     variants: [
@@ -473,7 +473,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'berringa-eucalyptus',
     name: 'Berringa Eucalyptus',
-    image: '/assets/products/empty.webp',
+    image: '/products/empty.webp',
     description: '',
     type: 'Honey',
     variants: [
@@ -486,7 +486,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'my-dads-honey-organic',
     name: 'My Dads Honey Organic',
-    image: '/assets/products/empty.webp',
+    image: '/products/empty.webp',
     description: '',
     type: 'Honey',
     variants: [
@@ -503,7 +503,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'raw-and-unfiltered',
     name: 'Raw and Unfiltered',
-    image: '/assets/products/empty.webp',
+    image: '/products/empty.webp',
     description: '',
     type: 'Honey',
     variants: [
@@ -520,7 +520,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'archibald',
     name: 'Archibald',
-    image: '/assets/products/empty.webp',
+    image: '/products/empty.webp',
     description: '',
     type: 'Honey',
     variants: [
@@ -533,7 +533,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'warral',
     name: 'Warral',
-    image: '/assets/products/empty.webp',
+    image: '/products/empty.webp',
     description: '',
     type: 'Honey',
     variants: [
@@ -558,7 +558,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'robinsons',
     name: 'Robinsons',
-    image: '/assets/products/empty.webp',
+    image: '/products/empty.webp',
     description: '',
     type: 'Honey',
     variants: [
@@ -579,7 +579,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'honey-pops',
     name: 'Honey Pops',
-    image: '/assets/products/empty.webp',
+    image: '/products/empty.webp',
     description: '',
     type: 'Honey',
     variants: [
@@ -596,7 +596,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'straws',
     name: 'Straws',
-    image: '/assets/products/empty.webp',
+    image: '/products/empty.webp',
     description: '',
     type: 'Honey',
     variants: [
@@ -613,7 +613,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'dipper',
     name: 'Dipper',
-    image: '/assets/products/empty.webp',
+    image: '/products/empty.webp',
     description: '',
     type: 'Honey',
     variants: [
@@ -626,7 +626,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'manuka-mgo-30-plus',
     name: 'Manuka MGO 30+',
-    image: '/assets/products/empty.webp',
+    image: '/products/empty.webp',
     description: '',
     type: 'Honey',
     variants: [
@@ -639,7 +639,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'manuka-mgo-100-plus',
     name: 'Manuka MGO 100+',
-    image: '/assets/products/empty.webp',
+    image: '/products/empty.webp',
     description: '',
     type: 'Honey',
     variants: [
@@ -656,7 +656,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'manuka-mgo-263-plus',
     name: 'Manuka MGO 263+',
-    image: '/assets/products/empty.webp',
+    image: '/products/empty.webp',
     description: '',
     type: 'Honey',
     variants: [
@@ -669,7 +669,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'manuka-mgo-400-plus',
     name: 'Manuka MGO 400+',
-    image: '/assets/products/empty.webp',
+    image: '/products/empty.webp',
     description: '',
     type: 'Honey',
     variants: [
@@ -682,7 +682,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'manuka-mgo-300-plus',
     name: 'Manuka MGO 300+',
-    image: '/assets/products/empty.webp',
+    image: '/products/empty.webp',
     description: '',
     type: 'Honey',
     variants: [
@@ -695,7 +695,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'manuka-mgo-900-plus',
     name: 'Manuka MGO 900+',
-    image: '/assets/products/empty.webp',
+    image: '/products/empty.webp',
     description: '',
     type: 'Honey',
     variants: [
@@ -708,7 +708,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'marri-honey',
     name: 'Marri Honey',
-    image: '/assets/products/empty.webp',
+    image: '/products/empty.webp',
     description: '',
     type: 'Honey',
     variants: [
@@ -777,7 +777,7 @@ export const PRODUCTS: ProductProps[] = [
   {
     handle: 'walkabout',
     name: 'Walkabout',
-    image: '/assets/products/empty.webp',
+    image: '/products/empty.webp',
     description: '',
     type: 'Honey',
     variants: [
@@ -837,8 +837,8 @@ export const FOOTER_CONTACT_INFO = {
 export const SOCIALS = {
   title: 'Social',
   links: [
-    { icon: '/assets/svgs/facebook.svg', href: '/' },
-    { icon: '/assets/svgs/instagram.svg', href: '/' },
-    { icon: '/assets/svgs/twitter.svg', href: '/' },
+    { icon: '/svgs/facebook.svg', href: '/' },
+    { icon: '/svgs/instagram.svg', href: '/' },
+    { icon: '/svgs/twitter.svg', href: '/' },
   ],
 };

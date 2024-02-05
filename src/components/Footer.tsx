@@ -26,7 +26,7 @@ const Footer = () => {
           <Link href="/" className="logo-link mb-10">
             {/* <Image src="hilink-logo.svg" alt="logo" width={74} height={29} /> */}
             <Image
-              src="assets/svgs/the-eggsperts-logo.svg"
+              src="/svgs/the-eggsperts-logo.svg"
               alt="The eggsperts chicken and bee logo"
               width={200}
               height={80}

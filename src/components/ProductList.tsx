@@ -31,7 +31,7 @@ const ProductList: React.FC<ProductListProps> = ({
       <div className="product-list-available-text-wrapper">
         <div className="lg:hidden">
           <Image
-            src="/assets/svgs/filter.svg"
+            src="/svgs/filter.svg"
             alt="The eggsperts yellow filter icon for mobile"
             width={50}
             height={50}
