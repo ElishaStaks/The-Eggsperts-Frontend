@@ -32,13 +32,10 @@ const ProductFilter: React.FC<FilterProps> = ({ onFilterChange }) => {
       : new URLSearchParams();
 
   useEffect(() => {
-    // Initialize selected filters based on the filter value in the URL
-    const filters = searchParams.getAll('filter');
-    if (filters) {
-      setSelectedFilters(filters);
-      onFilterChange(filters);
-    }
-  }, []);
+    // Initialize selected filters based on the filter value in the context
+    setSelectedFilters(contextSelectedFilters);
+    onFilterChange(contextSelectedFilters);
+  }, [contextSelectedFilters]);
 
   useEffect(() => {
     // Update the URL with the new filters
