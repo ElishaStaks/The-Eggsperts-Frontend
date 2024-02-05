@@ -35,11 +35,9 @@ export const metadata: Metadata = {
     },
   ],
   other: {
-    'twitter:image':
-      'https://github.com/ElishaStaks/The-Eggsperts-Frontend/blob/master/public/eggsperts-screenshot.png',
+    'twitter:image': '/eggsperts-screenshot.png',
     'og:url': 'The Eggsperts',
-    'og:image':
-      'https://github.com/ElishaStaks/The-Eggsperts-Frontend/blob/master/public/eggsperts-screenshot.png',
+    'og:image': '/eggsperts-screenshot.png',
     'og:type': 'website',
   },
 };
