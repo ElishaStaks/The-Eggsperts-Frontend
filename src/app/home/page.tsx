@@ -7,7 +7,7 @@ import { FEATURES } from '@/constants';
 
 export async function generateMetadata() {
   return {
-    title: 'Home - The Eggsperts',
+    title: 'Home | The Eggsperts',
     description: 'The Eggsperts landing page',
   };
 }

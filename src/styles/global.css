@@ -182,7 +182,7 @@ body {
 
   .nav-link-mobile {
     @apply w-full cursor-pointer border-b border-solid border-gray-300 
-    pb-1.5 text-lg text-gray-500 hover:font-bold
+    pb-1.5 text-lg  lg:hover:font-bold font-semibold text-gray-700
   }
   
   .nav-link {

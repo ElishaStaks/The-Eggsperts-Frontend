@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 import { PRODUCTS } from '../constants';
@@ -14,7 +13,6 @@ const ProductList: React.FC<ProductListProps> = ({
   filters,
   onFilterIconClick,
 }) => {
-  const router = useRouter();
   const [displayedProducts, setDisplayedProducts] = useState(productsPerPage);
 
   const filteredProducts =
@@ -26,11 +24,6 @@ const ProductList: React.FC<ProductListProps> = ({
 
   const handleLoadMore = () => {
     setDisplayedProducts((prev) => prev + productsPerLoadMore);
-  };
-
-  // Function to handle product card click and navigate to the product page
-  const handleProductClick = (handle: string) => {
-    router.push(`/products/${encodeURIComponent(handle.toLowerCase())}`);
   };
 
   return (
@@ -60,7 +53,6 @@ const ProductList: React.FC<ProductListProps> = ({
             image={product.image}
             type={product.type}
             variants={product.variants}
-            onClick={() => handleProductClick(product.handle)}
           />
         ))}
       </div>

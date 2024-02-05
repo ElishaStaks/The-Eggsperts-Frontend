@@ -5,7 +5,6 @@ export interface ProductProps {
   description?: string;
   type: string;
   variants: ProductVariantProps[];
-  onClick?: (handle: string) => void;
 }
 
 export interface ProductVariantProps {
