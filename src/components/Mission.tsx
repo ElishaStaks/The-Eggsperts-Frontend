@@ -34,11 +34,11 @@ const MissionItem = ({ title, icon, alt, description }: MissionItem) => {
 
 const Mission = () => {
   return (
-    <section className="flexCenter flex-col overflow-hidden bg-[#e3deca] py-24 lg:pb-[8rem] lg:pt-[9rem]">
+    <section className="flexCenter flex-col bg-[#e3deca] py-24 lg:pb-[8rem] lg:pt-[9rem]">
       <div className="max-container padding-container relative w-full justify-center">
         <div className="grid justify-between gap-y-16 lg:grid-cols-2 lg:gap-x-16">
-          <div className="relative flex flex-col items-start">
-            <div className="sticky z-10 flex max-w-[440px] flex-col items-start">
+          <div className="relative">
+            <div className="flex max-w-[440px] flex-col items-start lg:sticky lg:top-[4rem]">
               <Image
                 src="/eggs_title_icon.png"
                 alt="Basket of farm fresh eggs"
@@ -46,7 +46,9 @@ const Mission = () => {
                 height={50}
                 className="title-icon left-[5px]"
               />
-              <h2 className="bold-40 lg:bold-64 mb-[1rem]">Our Misson</h2>
+              <h2 className="bold-40 lg:bold-52 xl:bold-64 mb-[1rem]">
+                Our Misson
+              </h2>
               <p className="max-w-[35rem] leading-7">
                 {' '}
                 At The Eggsperts, our mission is clear — to provide our

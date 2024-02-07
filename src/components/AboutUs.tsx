@@ -9,7 +9,7 @@ const AboutUs = () => {
       <div className="max-container padding-container py-[4rem] lg:py-[5.5rem]">
         <div className="w-full">
           <div className="relative z-10">
-            <div className="max-w-[55rem]">
+            <div className="max-w-[55rem] lg:max-w-[65rem]">
               <Image
                 src="/eggs_title_icon.png"
                 alt="Basket of farm fresh eggs"

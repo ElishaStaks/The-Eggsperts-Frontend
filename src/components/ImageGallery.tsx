@@ -18,7 +18,7 @@ const ImageItem = ({ imageKey, image }: ImageItem) => {
             alt={`Farm fresh eggs and sweet honey-${imageKey}`}
             fill
             className="object-cover"
-            sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
+            sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 500px"
             loading="eager"
           />
         </div>

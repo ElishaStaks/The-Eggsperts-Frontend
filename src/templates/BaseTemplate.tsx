@@ -18,7 +18,7 @@ const BaseTemplate = (props: IBaseTemplateProps) => {
       {props.banner}
       <Navbar />
       <Toaster expand position="top-right" richColors />
-      <main className="relative overflow-hidden">{props.children}</main>
+      <main className="relative">{props.children}</main>
       <Footer />
     </>
   );
