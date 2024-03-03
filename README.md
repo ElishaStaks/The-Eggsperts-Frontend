@@ -2,6 +2,9 @@
 
 ![Eggsperts Showcase](https://github.com/ElishaStaks/The-Eggsperts-Frontend/blob/master/public/eggsperts-screenshot.png)
 
+## Live Website
+[the-eggsperts.com.au](https://www.the-eggsperts.com.au/home)
+
 ## Description
 
 Welcome to The Eggsperts, a Next.js website that introduces a local business specializing in high-quality eggs and honey related products. This site serves as a platform to showcase the expertise of the Eggsperts, providing valuable information about their origins, product offerings, and a convenient way to get in touch.
